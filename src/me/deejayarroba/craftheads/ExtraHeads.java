@@ -5,16 +5,16 @@ import org.bukkit.Material;
 import org.bukkit.inventory.Inventory;
 import org.bukkit.inventory.ItemStack;
 
-public class MainMenu {
+public class ExtraHeads {
 
-	private String menuTitle = "CraftHeads Menu";
+	private String menuTitle = "Extra heads";
 	private Inventory menu;
 	private MenuItemManager menuItemManager = new MenuItemManager();
 
-	public MainMenu() {
-		menuItemManager.createMenuItem("Get your own head!", null, Material.SKULL_ITEM, (short) 3);
-		menuItemManager.createMenuItem("Extra heads", null, Material.CAKE, (short) 0);
-		menuItemManager.createMenuItem("Get someone else's head", null, Material.GOLDEN_APPLE, (short) 0);
+	public ExtraHeads() {
+		menuItemManager.createMenuItem("Block heads", null, Material.GRASS, (short) 0);
+		menuItemManager.createMenuItem("Mob heads", null, Material.BOW, (short) 0);
+		menuItemManager.createMenuItem("Bonus heads", null, Material.TNT, (short) 0);
 
 		menu = Bukkit.createInventory(null, 9, menuTitle);
 		for(MenuItem menuItem : menuItemManager.getMenuItems()) {
@@ -34,5 +34,4 @@ public class MainMenu {
 	public MenuItemManager getManager() {
 		return menuItemManager;
 	}
-
 }

@@ -1,57 +1,55 @@
 package me.deejayarroba.craftheads;
 
 import org.bukkit.Bukkit;
-import org.bukkit.ChatColor;
 import org.bukkit.Material;
 import org.bukkit.inventory.Inventory;
 import org.bukkit.inventory.ItemStack;
-import org.bukkit.inventory.meta.ItemMeta;
-
-import java.util.HashMap;
-import java.util.Map;
 
 public class MobMenu {
 
-	public static String MenuTitle = "Mob heads";
-	public static Inventory menu = null;
+	private String menuTitle = "Mob heads";
+	private Inventory menu;
+	private MenuItemManager menuItemManager = new MenuItemManager();
 
-	public static Map<String, String> headList = new HashMap<String, String>();
+	public MobMenu() {
+		menuItemManager.createMenuItem("Blaze", "MHF_Blaze", Material.MONSTER_EGG, (short) 61);
+		menuItemManager.createMenuItem("Cave Spider", "MHF_CaveSpider", Material.MONSTER_EGG, (short) 59);
+		menuItemManager.createMenuItem("Chicken", "MHF_Chicken", Material.MONSTER_EGG, (short) 93);
+		menuItemManager.createMenuItem("Cow", "MHF_Cow", Material.MONSTER_EGG, (short) 92);
+		menuItemManager.createMenuItem("Enderman", "MHF_Enderman", Material.MONSTER_EGG, (short) 58);
+		menuItemManager.createMenuItem("Ghast", "MHF_Ghast", Material.MONSTER_EGG, (short) 56);
+		menuItemManager.createMenuItem("Magma Cube", "MHF_LavaSlime", Material.MONSTER_EGG, (short) 62);
+		menuItemManager.createMenuItem("Mooshroom", "MHF_MushroomCow", Material.MONSTER_EGG, (short) 96);
+		menuItemManager.createMenuItem("Ocelot", "MHF_Ocelot", Material.MONSTER_EGG, (short) 98);
+		menuItemManager.createMenuItem("Pig", "MHF_Pig", Material.MONSTER_EGG, (short) 90);
+		menuItemManager.createMenuItem("Zombie Pigman", "MHF_PigZombie", Material.MONSTER_EGG, (short) 57);
+		menuItemManager.createMenuItem("Sheep", "MHF_Sheep", Material.MONSTER_EGG, (short) 91);
+		menuItemManager.createMenuItem("Slime", "MHF_Slime", Material.MONSTER_EGG, (short) 55);
+		menuItemManager.createMenuItem("Spider", "MHF_Spider", Material.MONSTER_EGG, (short) 52);
+		menuItemManager.createMenuItem("Squid", "MHF_Squid", Material.MONSTER_EGG, (short) 94);
+		menuItemManager.createMenuItem("Squid 2", "Comcastt", Material.MONSTER_EGG, (short) 94);
+		menuItemManager.createMenuItem("Villager", "MHF_Villager", Material.MONSTER_EGG, (short) 120);
+		menuItemManager.createMenuItem("Iron golem", "MHF_Golem", Material.IRON_INGOT, (short) 0);
+		menuItemManager.createMenuItem("Wither", "MHF_Wither", Material.NETHER_STAR, (short) 0);
+		menuItemManager.createMenuItem("Herobrine", "MHF_Herobrine", Material.DIAMOND_SWORD, (short) 0);
 
-	public static void createHeads() {
-		headList.clear();
-		headList.put(ChatColor.AQUA + "Blaze", "MHF_Blaze");
-		headList.put(ChatColor.AQUA + "Cave Spider", "MHF_CaveSpider");
-		headList.put(ChatColor.AQUA + "Chicken", "MHF_Chicken");
-		headList.put(ChatColor.AQUA + "Cow", "MHF_Cow");
-		headList.put(ChatColor.AQUA + "Enderman", "MHF_Enderman");
-		headList.put(ChatColor.AQUA + "Ghast", "MHF_Ghast");
-		headList.put(ChatColor.AQUA + "Iron golem", "MHF_Golem");
-		headList.put(ChatColor.AQUA + "Herobrine", "MHF_Herobrine");
-		headList.put(ChatColor.AQUA + "Magma Cube", "MHF_LavaSlime");
-		headList.put(ChatColor.AQUA + "Mooshroom", "MHF_MushroomCow");
-		headList.put(ChatColor.AQUA + "Ocelot", "MHF_Ocelot");
-		headList.put(ChatColor.AQUA + "Pig", "MHF_Pig");
-		headList.put(ChatColor.AQUA + "Zombie Pigman", "MHF_PigZombie");
-		headList.put(ChatColor.AQUA + "Sheep", "MHF_Sheep");
-		headList.put(ChatColor.AQUA + "Slime", "MHF_Slime");
-		headList.put(ChatColor.AQUA + "Spider", "MHF_Spider");
-		headList.put(ChatColor.AQUA + "Squid", "MHF_Squid");
-		headList.put(ChatColor.AQUA + "Squid 2", "Comcastt");
-		headList.put(ChatColor.AQUA + "Villager", "MHF_Villager");
-		headList.put(ChatColor.AQUA + "Wither", "MHF_Wither");
-		headList.put(ChatColor.AQUA + "Witch", "awesome10987");
-	}
-
-	public static void createGUI() {
-		createHeads();
-		menu = Bukkit.createInventory(null, 27, MenuTitle);
-		for(String key : headList.keySet()) {
-			ItemStack headItem = new ItemStack(Material.SKULL_ITEM, 1);
-			ItemMeta headMeta = headItem.getItemMeta();
-			headMeta.setDisplayName(key);
-			headItem.setItemMeta(headMeta);
-			headItem.setDurability((short)3);
-			menu.addItem(headItem);
+		menu = Bukkit.createInventory(null, 27, menuTitle);
+		for(MenuItem menuItem : menuItemManager.getMenuItems()) {
+			ItemStack itemStack = menuItem.getItemStack();
+			menu.addItem(itemStack);
 		}
 	}
+
+	public Inventory getMenu() {
+		return menu;
+	}
+
+	public String getMenuTitle() {
+		return menuTitle;
+	}
+
+	public MenuItemManager getManager() {
+		return menuItemManager;
+	}
+
 }

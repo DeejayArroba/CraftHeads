@@ -6,7 +6,20 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7fec3bb9-7016-4d8a-b6c9-307c8f211d32" name="Default" comment="" />
+    <list default="true" id="7fec3bb9-7016-4d8a-b6c9-307c8f211d32" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/me/deejayarroba/craftheads/ExtraHeads.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/me/deejayarroba/craftheads/MenuItem.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/me/deejayarroba/craftheads/MenuItemManager.java" />
+      <change type="DELETED" beforePath="C:\Users\Felipe\IdeaProjects\CraftHeads\src\me\deejayarroba\craftheads\MicroblocksHub.java" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/me/deejayarroba/craftheads/BlocksMenu.java" afterPath="$PROJECT_DIR$/src/me/deejayarroba/craftheads/BlocksMenu.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/me/deejayarroba/craftheads/BonusMenu.java" afterPath="$PROJECT_DIR$/src/me/deejayarroba/craftheads/BonusMenu.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/me/deejayarroba/craftheads/InvClickEvent.java" afterPath="$PROJECT_DIR$/src/me/deejayarroba/craftheads/InvClickEvent.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/me/deejayarroba/craftheads/Main.java" afterPath="$PROJECT_DIR$/src/me/deejayarroba/craftheads/Main.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/me/deejayarroba/craftheads/MainMenu.java" afterPath="$PROJECT_DIR$/src/me/deejayarroba/craftheads/MainMenu.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/me/deejayarroba/craftheads/MobMenu.java" afterPath="$PROJECT_DIR$/src/me/deejayarroba/craftheads/MobMenu.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugin.yml" afterPath="$PROJECT_DIR$/plugin.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="Headz.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -72,25 +85,34 @@
       <file leaf-file-name="Main.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/me/deejayarroba/craftheads/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="40" selection-start="134" selection-end="134" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2040">
+            <state line="49" column="37" selection-start="1663" selection-end="1663" vertical-scroll-proportion="0.0" vertical-offset="665" max-vertical-offset="2090">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BonusMenu.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/me/deejayarroba/craftheads/BonusMenu.java">
+      <file leaf-file-name="MainMenu.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/me/deejayarroba/craftheads/MainMenu.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="23" selection-start="1715" selection-end="1715" vertical-scroll-proportion="0.04" vertical-offset="775" max-vertical-offset="1520">
+            <state line="15" column="74" selection-start="517" selection-end="517" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="836">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BlocksMenu.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/me/deejayarroba/craftheads/BlocksMenu.java">
+      <file leaf-file-name="InvClickEvent.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/me/deejayarroba/craftheads/InvClickEvent.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="47" column="58" selection-start="2088" selection-end="2088" vertical-scroll-proportion="0.0" vertical-offset="940" max-vertical-offset="1620">
+            <state line="100" column="101" selection-start="4298" selection-end="4298" vertical-scroll-proportion="0.41810346" vertical-offset="1706" max-vertical-offset="2318">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ExtraHeads.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/me/deejayarroba/craftheads/ExtraHeads.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="37" selection-start="231" selection-end="231" vertical-scroll-proportion="0.0" vertical-offset="57" max-vertical-offset="817">
               <folding />
             </state>
           </provider>
@@ -99,7 +121,34 @@
       <file leaf-file-name="MobMenu.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/me/deejayarroba/craftheads/MobMenu.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="44" column="36" selection-start="1800" selection-end="1800" vertical-scroll-proportion="0.0" vertical-offset="335" max-vertical-offset="1260">
+            <state line="29" column="96" selection-start="1835" selection-end="1835" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1159">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BonusMenu.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/me/deejayarroba/craftheads/BonusMenu.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="39" column="80" selection-start="2766" selection-end="2766" vertical-scroll-proportion="0.0" vertical-offset="456" max-vertical-offset="1387">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BlocksMenu.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/me/deejayarroba/craftheads/BlocksMenu.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="47" column="108" selection-start="3406" selection-end="3406" vertical-scroll-proportion="0.0" vertical-offset="513" max-vertical-offset="1444">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ChatEvent.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/me/deejayarroba/craftheads/ChatEvent.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="24" selection-start="367" selection-end="367" vertical-scroll-proportion="0.0" vertical-offset="34" max-vertical-offset="646">
               <folding />
             </state>
           </provider>
@@ -127,12 +176,23 @@
         <option value="$PROJECT_DIR$/src/me/deejayarroba/Headz/Metrics.java" />
         <option value="$PROJECT_DIR$/config.yml" />
         <option value="$PROJECT_DIR$/src/me/deejayarroba/Headz/Updater.java" />
-        <option value="$PROJECT_DIR$/plugin.yml" />
         <option value="$PROJECT_DIR$/src/me/deejayarroba/Headz/MobMenu.java" />
         <option value="$PROJECT_DIR$/src/me/deejayarroba/Headz/BonusMenu.java" />
         <option value="$PROJECT_DIR$/src/me/deejayarroba/Headz/BlocksMenu.java" />
         <option value="$PROJECT_DIR$/src/me/deejayarroba/Headz/Main.java" />
+        <option value="$PROJECT_DIR$/src/me/deejayarroba/craftheads/Menu.java" />
+        <option value="$PROJECT_DIR$/plugin.yml" />
+        <option value="$PROJECT_DIR$/src/me/deejayarroba/craftheads/MicroblocksHub.java" />
+        <option value="$PROJECT_DIR$/src/me/deejayarroba/craftheads/MenuItem.java" />
+        <option value="$PROJECT_DIR$/src/me/deejayarroba/craftheads/MenuItemManager.java" />
+        <option value="$PROJECT_DIR$/src/me/deejayarroba/craftheads/ExtraHeads.java" />
+        <option value="$PROJECT_DIR$/src/me/deejayarroba/craftheads/InvCloseEvent.java" />
+        <option value="$PROJECT_DIR$/src/me/deejayarroba/craftheads/MainMenu.java" />
+        <option value="$PROJECT_DIR$/src/me/deejayarroba/craftheads/MobMenu.java" />
+        <option value="$PROJECT_DIR$/src/me/deejayarroba/craftheads/BlocksMenu.java" />
         <option value="$PROJECT_DIR$/src/me/deejayarroba/craftheads/Main.java" />
+        <option value="$PROJECT_DIR$/src/me/deejayarroba/craftheads/BonusMenu.java" />
+        <option value="$PROJECT_DIR$/src/me/deejayarroba/craftheads/InvClickEvent.java" />
       </list>
     </option>
   </component>
@@ -221,7 +281,7 @@
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="SearchEverywhereHistory" value="cCr&#10;sku" />
+    <property name="SearchEverywhereHistory" value="&#10;cCr&#10;sku" />
     <property name="options.lastSelected" value="reference.settingsdialog.IDE.editor.colors" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
@@ -263,6 +323,19 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method />
+    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -288,19 +361,6 @@
       <envs />
       <properties />
       <listeners />
-      <method />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -395,26 +455,26 @@
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32872504" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32936078" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22734255" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15812592" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1954612" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32565284" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -438,23 +498,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/me/deejayarroba/craftheads/MainMenu.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="40" selection-start="369" selection-end="369" vertical-scroll-proportion="0.0" vertical-offset="252" max-vertical-offset="966" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plugin.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="9" selection-start="88" selection-end="88" vertical-scroll-proportion="0.0" vertical-offset="84" max-vertical-offset="462" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/me/deejayarroba/craftheads/MobMenu.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="58" selection-start="316" selection-end="316" vertical-scroll-proportion="0.0" vertical-offset="231" max-vertical-offset="714">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/me/deejayarroba/craftheads/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="21" column="0" selection-start="622" selection-end="666" vertical-scroll-proportion="0.0" vertical-offset="441" max-vertical-offset="1260">
@@ -500,7 +543,7 @@
         <state line="15" column="0" selection-start="401" selection-end="454" vertical-scroll-proportion="0.0" vertical-offset="315" max-vertical-offset="840" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/me/deejayarroba/craftheads/MicroblocksHub.java">
+    <entry file="file://$PROJECT_DIR$/src/me/deejayarroba/craftheads/ExtraHeads.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="14" column="29" selection-start="414" selection-end="414" vertical-scroll-proportion="0.0" vertical-offset="294" max-vertical-offset="903" />
       </provider>
@@ -550,7 +593,7 @@
         <state line="14" column="29" selection-start="397" selection-end="397" vertical-scroll-proportion="0.0" vertical-offset="294" max-vertical-offset="840" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/me/deejayarroba/craftheads/MicroblocksHub.java">
+    <entry file="file://$PROJECT_DIR$/src/me/deejayarroba/craftheads/ExtraHeads.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="14" column="29" selection-start="414" selection-end="414" vertical-scroll-proportion="0.0" vertical-offset="5" max-vertical-offset="903" />
       </provider>
@@ -670,25 +713,6 @@
         <state line="6" column="13" selection-start="163" selection-end="163" vertical-scroll-proportion="0.17470881" vertical-offset="0" max-vertical-offset="2898" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/me/deejayarroba/craftheads/MainMenu.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="0" selection-start="714" selection-end="714" vertical-scroll-proportion="0.0" vertical-offset="84" max-vertical-offset="861" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/me/deejayarroba/craftheads/ChatEvent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="73" selection-start="860" selection-end="860" vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="714">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/me/deejayarroba/craftheads/InvClickEvent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="84" column="81" selection-start="3390" selection-end="3390" vertical-scroll-proportion="0.0" vertical-offset="1575" max-vertical-offset="2289">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/me/deejayarroba/craftheads/Metrics.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="14" column="28" selection-start="479" selection-end="479" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="15498">
@@ -701,13 +725,6 @@
         <state line="0" column="17" selection-start="17" selection-end="17" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="625" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/me/deejayarroba/craftheads/MsgManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="58" selection-start="329" selection-end="329" vertical-scroll-proportion="0.0" vertical-offset="168" max-vertical-offset="798">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/me/deejayarroba/craftheads/Updater.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="478" column="66" selection-start="16747" selection-end="16747" vertical-scroll-proportion="0.0" vertical-offset="9759" max-vertical-offset="10437">
@@ -717,42 +734,84 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/plugin.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="54" selection-start="474" selection-end="474" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="546">
+        <state line="3" column="20" selection-start="88" selection-end="88" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="494">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/me/deejayarroba/craftheads/MicroblocksHub.java">
+    <entry file="file://$PROJECT_DIR$/src/me/deejayarroba/craftheads/MenuItemManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="0" selection-start="660" selection-end="660" vertical-scroll-proportion="0.0" vertical-offset="105" max-vertical-offset="798">
+        <state line="25" column="66" selection-start="559" selection-end="559" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="703">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/me/deejayarroba/craftheads/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/me/deejayarroba/craftheads/MsgManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="40" selection-start="134" selection-end="134" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2040">
+        <state line="11" column="58" selection-start="334" selection-end="334" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="779">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/me/deejayarroba/craftheads/BlocksMenu.java">
+    <entry file="file://$PROJECT_DIR$/src/me/deejayarroba/craftheads/MenuItem.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="58" selection-start="2088" selection-end="2088" vertical-scroll-proportion="0.0" vertical-offset="940" max-vertical-offset="1620">
+        <state line="23" column="32" selection-start="671" selection-end="671" vertical-scroll-proportion="0.7235099" vertical-offset="0" max-vertical-offset="836">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/me/deejayarroba/craftheads/ChatEvent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="24" selection-start="367" selection-end="367" vertical-scroll-proportion="0.0" vertical-offset="42" max-vertical-offset="646">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/me/deejayarroba/craftheads/MobMenu.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="36" selection-start="1800" selection-end="1800" vertical-scroll-proportion="0.0" vertical-offset="880" max-vertical-offset="1260">
+        <state line="29" column="96" selection-start="1835" selection-end="1835" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1159">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/me/deejayarroba/craftheads/BlocksMenu.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="47" column="108" selection-start="3406" selection-end="3406" vertical-scroll-proportion="0.0" vertical-offset="513" max-vertical-offset="1444">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/me/deejayarroba/craftheads/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="49" column="37" selection-start="1663" selection-end="1663" vertical-scroll-proportion="0.0" vertical-offset="665" max-vertical-offset="2090">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/me/deejayarroba/craftheads/MainMenu.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="74" selection-start="517" selection-end="517" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="836">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/me/deejayarroba/craftheads/ExtraHeads.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="37" selection-start="231" selection-end="231" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="817">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/me/deejayarroba/craftheads/BonusMenu.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="23" selection-start="1715" selection-end="1715" vertical-scroll-proportion="0.04" vertical-offset="775" max-vertical-offset="1520">
+        <state line="39" column="80" selection-start="2766" selection-end="2766" vertical-scroll-proportion="0.0" vertical-offset="456" max-vertical-offset="1387">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/me/deejayarroba/craftheads/InvClickEvent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="100" column="101" selection-start="4298" selection-end="4298" vertical-scroll-proportion="0.41810346" vertical-offset="1706" max-vertical-offset="2318">
           <folding />
         </state>
       </provider>
@@ -812,7 +871,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>Headz</last-edited>
+          <last-edited>CraftHeads</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

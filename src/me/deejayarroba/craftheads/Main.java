@@ -16,7 +16,12 @@ import java.io.IOException;
 
 public class Main extends JavaPlugin implements Listener {
 
+	static MainMenu mainMenu = new MainMenu();
+	static MsgManager msg = MsgManager.getInstance();
+
+	@Override
 	public void onEnable() {
+
 		getConfig().addDefault("auto-update", true);
 		getConfig().options().copyDefaults(true);
 		saveDefaultConfig();
@@ -35,17 +40,20 @@ public class Main extends JavaPlugin implements Listener {
 		} catch (IOException e) {
 			System.out.println("Failed to send metrics data");
 		}
-		MicroblocksHub.createGUI();
-		MainMenu.createGUI();
-		BlocksMenu.createGUI();
-		MobMenu.createGUI();
-		BonusMenu.createGUI();
 		getServer().getPluginManager().registerEvents(new InvClickEvent(), this);
 		getServer().getPluginManager().registerEvents(new ChatEvent(), this);
 		getServer().getPluginManager().registerEvents(this, this);
 	}
 
-	static MsgManager msg = MsgManager.getInstance();
+	@Override
+	public void onDisable() {
+		InvClickEvent.mobMenu = null;
+		InvClickEvent.mainMenu = null;
+		InvClickEvent.bonusMenu = null;
+		InvClickEvent.extraHeads = null;
+		InvClickEvent.blocksMenu = null;
+		mainMenu = null;
+	}
 
 	public static void giveSkull(Player p, String skullOwner, String itemName) {
 		ItemStack skullItem = new ItemStack(Material.SKULL_ITEM);
@@ -66,7 +74,7 @@ public class Main extends JavaPlugin implements Listener {
 					return true;
 				} else {
 					// Open the menu here
-					s.openInventory(MainMenu.menu);
+					s.openInventory(mainMenu.getMenu());
 					return true;
 				}
 			} else {
