@@ -21,24 +21,29 @@ public class Main extends JavaPlugin implements Listener {
 
 	@Override
 	public void onEnable() {
-
 		getConfig().addDefault("auto-update", true);
+		getConfig().addDefault("update-check", true);
+		getConfig().addDefault("metrics", true);
 		getConfig().options().copyDefaults(true);
 		saveDefaultConfig();
-		if (getConfig().getBoolean("auto-update")) {
-			Updater updater = new Updater(this, 70538, this.getFile(), Updater.UpdateType.DEFAULT, true);
-		} else {
-			Updater updater = new Updater(this, 70538, this.getFile(), Updater.UpdateType.NO_DOWNLOAD, false);
-			Updater.UpdateResult result = updater.getResult();
-			if (result == Updater.UpdateResult.UPDATE_AVAILABLE) {
-				getLogger().info("An update for CraftHeads is available");
+		if(getConfig().getBoolean("update-check")) {
+			if (getConfig().getBoolean("auto-update")) {
+				Updater updater = new Updater(this, 70538, this.getFile(), Updater.UpdateType.DEFAULT, true);
+			} else {
+				Updater updater = new Updater(this, 70538, this.getFile(), Updater.UpdateType.NO_DOWNLOAD, false);
+				Updater.UpdateResult result = updater.getResult();
+				if (result == Updater.UpdateResult.UPDATE_AVAILABLE) {
+					getLogger().info("An update for CraftHeads is available");
+				}
 			}
 		}
-		try {
-			Metrics metrics = new Metrics(this);
-			metrics.start();
-		} catch (IOException e) {
-			System.out.println("Failed to send metrics data");
+		if(getConfig().getBoolean("metrics")) {
+			try {
+				Metrics metrics = new Metrics(this);
+				metrics.start();
+			} catch (IOException e) {
+				System.out.println("Failed to send metrics data");
+			}
 		}
 		getServer().getPluginManager().registerEvents(new InvClickEvent(), this);
 		getServer().getPluginManager().registerEvents(new ChatEvent(), this);
@@ -86,12 +91,14 @@ public class Main extends JavaPlugin implements Listener {
 	}
 
 	public void updateNotice(Player p) {
-		if (!getConfig().getBoolean("auto-update")) {
-			if (p.hasPermission("craftheads.updater") || p.isOp()) {
-				Updater updater = new Updater(this, 70538, this.getFile(), Updater.UpdateType.NO_DOWNLOAD, false);
-				Updater.UpdateResult result = updater.getResult();
-				if (result == Updater.UpdateResult.UPDATE_AVAILABLE) {
-					msg.info(p, "An update is available for CraftHeads. Get it here: " + updater.getLatestFileLink());
+		if(getConfig().getBoolean("update-check")) {
+			if (!getConfig().getBoolean("auto-update")) {
+				if (p.hasPermission("craftheads.updater") || p.isOp()) {
+					Updater updater = new Updater(this, 70538, this.getFile(), Updater.UpdateType.NO_DOWNLOAD, false);
+					Updater.UpdateResult result = updater.getResult();
+					if (result == Updater.UpdateResult.UPDATE_AVAILABLE) {
+						msg.info(p, "An update is available for CraftHeads. Get it here: " + updater.getLatestFileLink());
+					}
 				}
 			}
 		}
