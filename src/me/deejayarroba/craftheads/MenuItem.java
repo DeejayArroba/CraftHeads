@@ -21,7 +21,7 @@ public class MenuItem {
 	public ItemStack getItemStack() {
 		ItemStack itemStack = new ItemStack(material, 1);
 		ItemMeta itemMeta = itemStack.getItemMeta();
-		itemMeta.setDisplayName(name);
+		itemMeta.setDisplayName("" + name);
 		itemStack.setItemMeta(itemMeta);
 		itemStack.setDurability(itemStackDurability);
 		return itemStack;

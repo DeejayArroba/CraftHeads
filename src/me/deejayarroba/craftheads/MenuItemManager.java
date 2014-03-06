@@ -8,24 +8,12 @@ import java.util.List;
 
 public class MenuItemManager {
 
-	private List<MenuItem> menuItems = new ArrayList<MenuItem>();
+	private static List<MenuItem> menuItems = new ArrayList<MenuItem>();
 
-	public List<MenuItem> getMenuItems() {
-		return menuItems;
-	}
-
-	public MenuItem getMenuItem(String menuItemName) {
-		for(MenuItem menuItem : menuItems) {
-			if(menuItem.getName().equals(menuItemName)) {
-				return menuItem;
-			}
-		}
-		return null;
-	}
-
-	public void createMenuItem(String name, String headName, Material material, short itemStackDurability) {
+	public static MenuItem createMenuItem(String name, String headName, Material material, short itemStackDurability) {
 		MenuItem menuItem = new MenuItem(ChatColor.AQUA + name, headName, material, itemStackDurability);
 		menuItems.add(menuItem);
+		return menuItem;
 	}
 
 }
