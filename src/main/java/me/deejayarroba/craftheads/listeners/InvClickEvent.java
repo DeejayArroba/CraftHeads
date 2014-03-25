@@ -11,8 +11,6 @@ import org.bukkit.inventory.ItemStack;
 public class InvClickEvent implements Listener {
 
 	MessageManager msg = MessageManager.getInstance();
-	static MenuManager menuManager = new MenuManager();
-
 
 	@EventHandler
 	public void click(InventoryClickEvent event) {
