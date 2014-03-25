@@ -30,15 +30,14 @@ public class Category {
 		int slotCount;
 		int itemCount = getHeads().size();
 		int rest = itemCount % 9;
-		if (rest == 0) {
+		if (rest == 0)
 			slotCount = itemCount;
-		} else {
+		else
 			slotCount = itemCount + (9 - rest);
-		}
 
 		inventory = Bukkit.createInventory(null, slotCount, name);
 
-		for(Head head : heads) {
+		for (Head head : heads) {
 			inventory.addItem(head.getItemStack());
 		}
 
@@ -50,6 +49,12 @@ public class Category {
 
 	public void add(String name, String headName, Material material, short damage) {
 		Head head = new Head(name, headName, material, damage);
+		inventory.addItem(head.getItemStack());
+		heads.add(head);
+	}
+
+	public void add(String name, String headName, Material material, short damage, boolean safe) {
+		Head head = new Head(name, headName, material, damage, safe);
 		inventory.addItem(head.getItemStack());
 		heads.add(head);
 	}
