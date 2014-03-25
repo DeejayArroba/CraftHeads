@@ -1,17 +1,17 @@
-package me.deejayarroba.craftheads;
+package me.deejayarroba.craftheads.util;
 
 import org.bukkit.ChatColor;
 import org.bukkit.entity.Player;
 
-public class MsgManager {
+public class MessageManager {
 
 	String prefix = ChatColor.DARK_GRAY + "[" + ChatColor.GREEN + "CraftHeads" + ChatColor.DARK_GRAY + "] " + ChatColor.RESET;
 
-	private MsgManager() { }
+	private MessageManager() { }
 
-	private static MsgManager instance = new MsgManager();
+	private static MessageManager instance = new MessageManager();
 
-	public static MsgManager getInstance() {
+	public static MessageManager getInstance() {
 		return instance;
 	}
 

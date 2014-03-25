@@ -1,4 +1,4 @@
-package me.deejayarroba.craftheads;
+package me.deejayarroba.craftheads.menu;
 
 import org.bukkit.Bukkit;
 import org.bukkit.inventory.Inventory;

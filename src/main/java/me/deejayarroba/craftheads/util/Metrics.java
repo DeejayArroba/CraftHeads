@@ -1,4 +1,4 @@
-package me.deejayarroba.craftheads;
+package me.deejayarroba.craftheads.util;
 
 import org.bukkit.Bukkit;
 import org.bukkit.configuration.InvalidConfigurationException;

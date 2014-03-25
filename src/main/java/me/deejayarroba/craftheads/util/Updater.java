@@ -1,4 +1,4 @@
-package me.deejayarroba.craftheads;
+package me.deejayarroba.craftheads.util;
 
 import java.io.*;
 import java.net.MalformedURLException;
