@@ -3,8 +3,8 @@ package me.deejayarroba.craftheads.menu.categories;
 import me.deejayarroba.craftheads.menu.Category;
 import org.bukkit.Material;
 
-public class StonesAndOres extends Category {
-	public StonesAndOres(String name, Material material, short damage) {
+public class StonesAndOresCategory extends Category {
+	public StonesAndOresCategory(String name, Material material, short damage) {
 		super(name, material, damage);
 	}
 

@@ -1,8 +1,11 @@
 package me.deejayarroba.craftheads.menu;
 
 import org.bukkit.Bukkit;
+import org.bukkit.ChatColor;
+import org.bukkit.Material;
 import org.bukkit.inventory.Inventory;
 import org.bukkit.inventory.ItemStack;
+import org.bukkit.inventory.meta.ItemMeta;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -11,13 +14,19 @@ public class Menu {
 
 	private String name;
 	private Inventory inventory;
-	private int slotCount;
+	private ItemStack icon;
 	private List<MenuItem> menuItems = new ArrayList<MenuItem>();
 
-	public Menu(String name, List<MenuItem> menuItems) {
-		this.menuItems = menuItems;
-		this.name = name;
+	public Menu(String name, Material material, short damage) {this.name = ChatColor.AQUA + name;
+		ItemStack itemStack = new ItemStack(material, 1, damage);
+		ItemMeta itemMeta = itemStack.getItemMeta();
+		itemMeta.setDisplayName(name);
+		itemStack.setItemMeta(itemMeta);
+		this.icon = itemStack;
 
+		setup();
+
+		int slotCount;
 		int itemCount = getMenuItems().size();
 		int rest = itemCount % 9;
 		if(rest == 0) {
@@ -27,9 +36,9 @@ public class Menu {
 		}
 
 		inventory = Bukkit.createInventory(null, slotCount, name);
-		for(MenuItem menuItem : getMenuItems()) {
-			ItemStack itemStack = menuItem.getItemStack();
-			inventory.addItem(itemStack);
+
+		for(MenuItem menuItem : menuItems) {
+			inventory.addItem(menuItem.getItemStack());
 		}
 	}
 
@@ -37,13 +46,8 @@ public class Menu {
 		return menuItems;
 	}
 
-	public MenuItem getMenuItem(String menuItemName) {
-		for(MenuItem menuItem : menuItems) {
-			if(menuItem.getName().equals(menuItemName)) {
-				return menuItem;
-			}
-		}
-		return null;
+	public void setup() {
+
 	}
 
 	public Inventory getInventory() {
@@ -52,10 +56,6 @@ public class Menu {
 
 	public String getName() {
 		return name;
-	}
-
-	public int getSlotCount() {
-		return slotCount;
 	}
 
 }

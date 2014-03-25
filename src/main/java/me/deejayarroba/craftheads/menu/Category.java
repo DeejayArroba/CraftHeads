@@ -38,6 +38,10 @@ public class Category {
 
 		inventory = Bukkit.createInventory(null, slotCount, name);
 
+		for(Head head : heads) {
+			inventory.addItem(head.getItemStack());
+		}
+
 	}
 
 	public void setup() {
