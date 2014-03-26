@@ -16,7 +16,7 @@ public class CategoryManager {
 		setup();
 	}
 
-	public CategoryManager getInstance() {
+	public static CategoryManager getInstance() {
 		return instance;
 	}
 

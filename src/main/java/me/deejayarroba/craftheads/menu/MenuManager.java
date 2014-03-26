@@ -17,7 +17,7 @@ public class MenuManager {
 		setup();
 	}
 
-	public MenuManager getInstance() {
+	public static MenuManager getInstance() {
 		return instance;
 	}
 
@@ -27,11 +27,19 @@ public class MenuManager {
 
 	private void setup() {
 		add(new MainMenu("Main menu", Material.WORKBENCH, (short) 0));
-		add(new ExtraHeadsMenu("Extra Heads Menu", Material.CAKE, (short) 0));
+		add(new ExtraHeadsMenu("Extra heads", Material.CAKE, (short) 0));
 	}
 
-	public List<Menu> getCategories() {
+	public List<Menu> getMenus() {
 		return menus;
+	}
+
+	public Menu getMenu(String name) {
+		for(Menu menu : getMenus()) {
+			if(menu.getName().equals(name))
+				return menu;
+		}
+		return null;
 	}
 
 }

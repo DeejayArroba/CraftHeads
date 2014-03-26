@@ -17,14 +17,13 @@ public class ChatEvent implements Listener {
 	@EventHandler
 	public void onChatEvent(AsyncPlayerChatEvent e) {
 		if (chatUtil.isRequestingHead(e.getPlayer())) {
+			e.setCancelled(true);
 			if (e.getMessage().contains(" ")) {
-				e.setCancelled(true);
 				msg.bad(e.getPlayer(), "That's not a valid user, type the username again!");
 			} else {
 				headUtil.giveHead(e.getPlayer(), e.getMessage(), e.getMessage());
 				msg.good(e.getPlayer(), "You now have " + ChatColor.AQUA + e.getMessage() + ChatColor.GREEN + "'s head!");
 				chatUtil.setRequestingHead(e.getPlayer(), false);
-				e.setCancelled(true);
 			}
 
 		}
