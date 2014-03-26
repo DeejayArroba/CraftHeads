@@ -1,7 +1,6 @@
 package me.deejayarroba.craftheads.menu;
 
 import org.bukkit.Bukkit;
-import org.bukkit.ChatColor;
 import org.bukkit.Material;
 import org.bukkit.inventory.Inventory;
 import org.bukkit.inventory.ItemStack;
@@ -18,7 +17,7 @@ public class Menu {
 	private List<MenuItem> menuItems = new ArrayList<MenuItem>();
 
 	public Menu(String name, Material material, short damage) {
-		this.name = ChatColor.AQUA + name;
+		this.name = name;
 		ItemStack itemStack = new ItemStack(material, 1, damage);
 		ItemMeta itemMeta = itemStack.getItemMeta();
 		itemMeta.setDisplayName(name);
