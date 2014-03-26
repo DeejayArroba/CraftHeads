@@ -7,13 +7,12 @@ import me.deejayarroba.craftheads.listeners.PlayerJoin;
 import me.deejayarroba.craftheads.util.AbstractCommand;
 import me.deejayarroba.craftheads.util.Metrics;
 import me.deejayarroba.craftheads.util.Updater;
-import org.bukkit.event.Listener;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import java.io.File;
 import java.io.IOException;
 
-public class Main extends JavaPlugin implements Listener {
+public class Main extends JavaPlugin {
 
 	@Override
 	public void onEnable() {
@@ -26,7 +25,6 @@ public class Main extends JavaPlugin implements Listener {
 		getServer().getPluginManager().registerEvents(new InvClickEvent(), this);
 		getServer().getPluginManager().registerEvents(new ChatEvent(), this);
 		getServer().getPluginManager().registerEvents(new PlayerJoin(), this);
-		getServer().getPluginManager().registerEvents(this, this);
 
 		AbstractCommand craftHeadsCommand = new CraftHeadsCommand("craftheads", "/<command>", "The main CraftHeads command.");
 		craftHeadsCommand.register();

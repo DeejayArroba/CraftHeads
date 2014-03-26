@@ -2,11 +2,6 @@ main: me.deejayarroba.craftheads.Main
 version: 1.4
 name: CraftHeads
 author: DeejayArroba
-commands:
-   craftheads:
-      usage: Syntax error! Use /<command>
-      permission: craftheads.use
-      description: Open the CraftHeads menu.
 permissions:
    craftheads.*:
       description: Gives access to all of CraftHeads features

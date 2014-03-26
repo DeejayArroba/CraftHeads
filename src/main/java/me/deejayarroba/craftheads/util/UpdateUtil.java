@@ -8,7 +8,7 @@ public class UpdateUtil {
 
 	Main plugin = (Main) Bukkit.getPluginManager().getPlugin("CraftHeads");
 	MessageManager msg = MessageManager.getInstance();
-	private static UpdateUtil instance;
+	private static UpdateUtil instance = new UpdateUtil();
 
 	public void updateNotice(Player p) {
 		if (plugin.getConfig().getBoolean("update-check"))
