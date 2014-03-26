@@ -1,6 +1,7 @@
 package me.deejayarroba.craftheads.menu;
 
 import me.deejayarroba.craftheads.util.HeadUtil;
+import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.Material;
 import org.bukkit.entity.Player;
@@ -38,11 +39,22 @@ public class Head {
 	public ItemStack getItemStack() {
 		ItemStack itemStack = new ItemStack(material, 1, damage);
 		ItemMeta itemMeta = itemStack.getItemMeta();
-		itemMeta.setDisplayName(name);
-		if(safe)
-			itemMeta.setLore(Arrays.asList(ChatColor.ITALIC + "" + ChatColor.GREEN + "Safe"));
 
-		itemStack.setItemMeta(itemMeta);
+		if(itemStack == null) {
+			Bukkit.broadcastMessage("ITEMSTACK is null");
+		}
+
+		if (itemMeta == null)
+			Bukkit.broadcastMessage("itemMeta is null");
+		else {
+			itemMeta.setDisplayName(name);
+
+			if (safe)
+				itemMeta.setLore(Arrays.asList(ChatColor.ITALIC + "" + ChatColor.GREEN + "Safe"));
+
+			itemStack.setItemMeta(itemMeta);
+		}
+
 		return itemStack;
 	}
 

@@ -34,6 +34,7 @@ public class Category {
 			slotCount = itemCount + (9 - rest);
 
 		inventory = Bukkit.createInventory(null, slotCount, name);
+
 		setup();
 
 	}
