@@ -1,5 +1,6 @@
 package me.deejayarroba.craftheads.listeners;
 
+import me.deejayarroba.craftheads.menu.*;
 import me.deejayarroba.craftheads.util.MessageManager;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
@@ -17,5 +18,22 @@ public class InvClickEvent implements Listener {
 		Player p = (Player) event.getWhoClicked();
 		Inventory inventory = event.getInventory();
 		ItemStack clickedItem = event.getCurrentItem();
+		MenuManager menuManager = MenuManager.getInstance();
+		CategoryManager categoryManager = CategoryManager.getInstance();
+
+		Menu menu = menuManager.getMenu(inventory.getTitle());
+		MenuItem menuItem = menu.getMenuItem(clickedItem.getItemMeta().getDisplayName());
+
+		Category category = categoryManager.getCategory(inventory.getTitle());
+		Head head = category.getHead(clickedItem.getItemMeta().getDisplayName());
+
+		if (menu != null)
+			if (menuItem != null)
+				menuItem.executeAction(p);
+
+		if (category != null)
+			if (head != null)
+				head.executeAction(p);
+
 	}
 }

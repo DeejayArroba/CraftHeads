@@ -51,6 +51,15 @@ public class Menu {
 		return menuItems;
 	}
 
+	public MenuItem getMenuItem(String menuItemName) {
+		for (MenuItem menuItem : menuItems) {
+			if (menuItem.getName().equals(menuItemName)) {
+				return menuItem;
+			}
+		}
+		return null;
+	}
+
 	public void setup() {
 
 	}

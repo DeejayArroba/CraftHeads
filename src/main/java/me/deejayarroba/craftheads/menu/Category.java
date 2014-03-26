@@ -63,6 +63,15 @@ public class Category {
 		return heads;
 	}
 
+	public Head getHead(String name) {
+		for(Head head : heads) {
+			if(head.getName().equals(name)) {
+				return head;
+			}
+		}
+		return null;
+	}
+
 	public ItemStack getIcon() {
 		return icon;
 	}
