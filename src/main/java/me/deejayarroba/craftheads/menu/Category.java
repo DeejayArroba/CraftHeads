@@ -25,8 +25,6 @@ public class Category {
 		itemStack.setItemMeta(itemMeta);
 		this.icon = itemStack;
 
-		setup();
-
 		int slotCount;
 		int itemCount = getHeads().size();
 		int rest = itemCount % 9;
@@ -36,10 +34,7 @@ public class Category {
 			slotCount = itemCount + (9 - rest);
 
 		inventory = Bukkit.createInventory(null, slotCount, name);
-
-		for (Head head : heads) {
-			inventory.addItem(head.getItemStack());
-		}
+		setup();
 
 	}
 

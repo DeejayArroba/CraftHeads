@@ -24,8 +24,6 @@ public class Menu {
 		itemStack.setItemMeta(itemMeta);
 		this.icon = itemStack;
 
-		setup();
-
 		int slotCount;
 		int itemCount = getMenuItems().size();
 		int rest = itemCount % 9;
@@ -36,9 +34,7 @@ public class Menu {
 
 		inventory = Bukkit.createInventory(null, slotCount, name);
 
-		for (MenuItem menuItem : menuItems) {
-			inventory.addItem(menuItem.getItemStack());
-		}
+		setup();
 	}
 
 	public void add(String name, Material material, short damage, int position, MenuItemAction action) {
