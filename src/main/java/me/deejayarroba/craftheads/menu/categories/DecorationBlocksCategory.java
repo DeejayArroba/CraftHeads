@@ -11,7 +11,6 @@ public class DecorationBlocksCategory extends Category {
 	@Override
 	public void setup() {
 		add("Chimney", "The_Wither_Boss", Material.FIRE, (short) 0);
-		add("Stone with light", "MrARuiz", Material.STONE, (short) 0);
 		add("Mailbox (1)", "Nixteen", Material.PAPER, (short) 0);
 		add("Mailbox (2)", "BigG0628", Material.PAPER, (short) 0);
 		add("Iron chest", "BillTheBuild3r", Material.CHEST, (short) 0);
@@ -33,9 +32,8 @@ public class DecorationBlocksCategory extends Category {
 		add("Space rock", "speedblader03", Material.OBSIDIAN, (short) 0);
 		add("Solid block", "cholo71796", Material.QUARTZ_BLOCK, (short) 0);
 		add("Metal block", "_The_God_King_", Material.IRON_BLOCK, (short) 0);
-		add("Missing texture", "ddrl46", Material.LOCKED_CHEST, (short) 0);
+		add("Missing texture", "ddrl46", Material.WOOL, (short) 2);
 		add("Lava rock", "crolin", Material.LAVA_BUCKET, (short) 0);
-		add("Infected cobblestone", "Eddgc", Material.MOSSY_COBBLESTONE, (short) 0);
 		add("Sun/Moon", "xMKK3L", Material.GLOWSTONE, (short) 0);
 		add("Spiral", "bondsmatthew", Material.STRING, (short) 0);
 		add("Grid", "Chritation", Material.MOB_SPAWNER, (short) 0);

@@ -18,12 +18,14 @@ public class Category {
 	private List<Head> heads = new ArrayList<Head>();
 
 	public Category(String name, Material material, short damage) {
-		this.name = ChatColor.AQUA + name;
+		this.name = name;
 		ItemStack itemStack = new ItemStack(material, 1, damage);
 		ItemMeta itemMeta = itemStack.getItemMeta();
-		itemMeta.setDisplayName(name);
+		itemMeta.setDisplayName(ChatColor.AQUA + name);
 		itemStack.setItemMeta(itemMeta);
 		this.icon = itemStack;
+
+		setup();
 
 		int slotCount;
 		int itemCount = getHeads().size();
@@ -33,9 +35,11 @@ public class Category {
 		else
 			slotCount = itemCount + (9 - rest);
 
-		inventory = Bukkit.createInventory(null, slotCount, name);
+		inventory = Bukkit.createInventory(null, slotCount, this.name);
 
-		setup();
+		for(Head head : heads) {
+			inventory.addItem(head.getItemStack());
+		}
 
 	}
 
@@ -45,13 +49,11 @@ public class Category {
 
 	public void add(String name, String headName, Material material, short damage) {
 		Head head = new Head(name, headName, material, damage);
-		inventory.addItem(head.getItemStack());
 		heads.add(head);
 	}
 
 	public void add(String name, String headName, Material material, short damage, boolean safe) {
 		Head head = new Head(name, headName, material, damage, safe);
-		inventory.addItem(head.getItemStack());
 		heads.add(head);
 	}
 

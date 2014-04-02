@@ -13,7 +13,6 @@ public class SlimesCategory extends Category {
 		add("Slime", "MHF_Slime", Material.SLIME_BALL, (short) 0);
 		add("Magma cube", "MHF_LavaSlime", Material.MAGMA_CREAM, (short) 0);
 		add("Dark red slime", "inferno800", Material.WOOL, (short) 14);
-		add("Red slime", "AlexSuperHD", Material.WOOL, (short) 14);
 		add("Orange slime", "md_5", Material.WOOL, (short) 1);
 		add("Red/Yellow slime", "Shilo56", Material.WOOL, (short) 4);
 		add("Yellow slime (1)", "scottdang", Material.WOOL, (short) 4);
@@ -25,7 +24,6 @@ public class SlimesCategory extends Category {
 		add("Green slime (2)", "firebot86", Material.WOOL, (short) 5);
 		add("Light cyan slime", "mixa4", Material.WOOL, (short) 9);
 		add("Light blue slime (1)", "IronPigCraft", Material.WOOL, (short) 3);
-		add("Light blue slime (2)", "Sebastiian", Material.WOOL, (short) 3);
 		add("Cyan slime (1)", "redsnow9", Material.WOOL, (short) 9);
 		add("Cyan slime (2)", "zilon1", Material.WOOL, (short) 9);
 		add("Blue slime", "Deathbeam", Material.WOOL, (short) 11);
@@ -37,13 +35,10 @@ public class SlimesCategory extends Category {
 		add("Magenta slime", "NewRequiem", Material.WOOL, (short) 2);
 		add("Pink slime", "Pink__Slime", Material.WOOL, (short) 6);
 		add("White/Blue slime", "Jorichi", Material.WOOL, (short) 0);
-		add("White slime", "solsa", Material.WOOL, (short) 0);
 		add("Gray slime", "JulianClark", Material.WOOL, (short) 7);
 		add("Black slime", "Teminator1311", Material.WOOL, (short) 15);
 		add("Slime with sunglasses", "invalidd", Material.SLIME_BALL, (short) 0);
-		add("Green science slime", "conman234", Material.WOOL, (short) 5);
 		add("Blue science slime", "maximka1221", Material.WOOL, (short) 11);
-		add("Slime with hair", "WyvernHunterZ", Material.SLIME_BALL, (short) 0);
 		add("Gold slime", "Domcame", Material.GOLD_BLOCK, (short) 0);
 	}
 }

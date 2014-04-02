@@ -11,11 +11,9 @@ public class FruitAndPlantsCategory extends Category {
 	@Override
 	public void setup() {
 		add("Orange", "hi1232", Material.WOOL, (short) 1);
-		add("Lemon", "aesixx", Material.WOOL, (short) 5);
 		add("Cherry", "TheEvilEnderman", Material.WOOL, (short) 14);
 		add("Apple (1)", "MHF_Apple", Material.APPLE, (short) 0);
 		add("Apple (2)", "KylexDavis", Material.APPLE, (short) 0);
-		add("Strawberry", "captan_sparkles", Material.WOOL, (short) 14);
 		add("Coconut", "KyleWDM", Material.WOOL, (short) 12);
 		add("Melon (1)", "MHF_Melon", Material.MELON_BLOCK, (short) 0);
 		add("Melon (2)", "PatrickAVG", Material.MELON_BLOCK, (short) 0);
@@ -26,7 +24,6 @@ public class FruitAndPlantsCategory extends Category {
 		add("Cut citrus", "BalkondeurAlpha", Material.STAINED_CLAY, (short) 5);
 		add("Sugar cane", "Sugar_Cane_", Material.SUGAR_CANE, (short) 0);
 		add("Cactus", "MHF_Cactus", Material.CACTUS, (short) 0);
-		add("Grapes", "yamichetan78", Material.WOOL, (short) 10);
 		add("Red mushroom", "Peace_cloaked", Material.RED_MUSHROOM, (short) 0);
 	}
 }

@@ -29,6 +29,15 @@ public class Main extends JavaPlugin {
 		AbstractCommand craftHeadsCommand = new CraftHeadsCommand("craftheads", "/<command>", "The main CraftHeads command.");
 		craftHeadsCommand.register();
 
+		if(getConfig().getBoolean("metrics")) {
+			try {
+				Metrics metrics = new Metrics(this);
+				metrics.start();
+			} catch (IOException e) {
+				System.out.println("Failed to send metrics data");
+			}
+		}
+
 		if(getConfig().getBoolean("update-check")) {
 			if (getConfig().getBoolean("auto-update")) {
 				Updater updater = new Updater(this, 70538, this.getFile(), Updater.UpdateType.DEFAULT, true);
@@ -40,19 +49,6 @@ public class Main extends JavaPlugin {
 				}
 			}
 		}
-		if(getConfig().getBoolean("metrics")) {
-			try {
-				Metrics metrics = new Metrics(this);
-				metrics.start();
-			} catch (IOException e) {
-				System.out.println("Failed to send metrics data");
-			}
-		}
-	}
-
-	@Override
-	public void onDisable() {
-
 	}
 
 	public File getPluginFile() {

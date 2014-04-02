@@ -10,7 +10,7 @@ public class NetherCategory extends Category {
 
 	@Override
 	public void setup() {
-		add("Netherrack", "Numba_one_stunna", Material.NETHERRACK, (short) 0);
+		add("Netherrack", "Numba_one_Stunna", Material.NETHERRACK, (short) 0);
 		add("Soulsand", "Njham", Material.SOUL_SAND, (short) 0);
 		add("Glowstone", "samstine11", Material.GLOWSTONE, (short) 0);
 		add("Netherbrick", "ingo897", Material.NETHER_BRICK, (short) 0);

@@ -12,12 +12,14 @@ public class MenuItem {
 	private String name;
 	private short damage;
 	private MenuItemAction action;
+	private int position;
 
-	public MenuItem(String name, Material material, short damage, MenuItemAction action) {
+	public MenuItem(String name, Material material, short damage, MenuItemAction action, int position) {
 		this.material = material;
 		this.name = ChatColor.AQUA + name;
 		this.damage = damage;
 		this.action = action;
+		this.position = position;
 	}
 
 	public ItemStack getItemStack() {
@@ -34,6 +36,10 @@ public class MenuItem {
 
 	public void executeAction(Player p) {
 		action.click(p);
+	}
+
+	public int getPosition() {
+		return position;
 	}
 
 }

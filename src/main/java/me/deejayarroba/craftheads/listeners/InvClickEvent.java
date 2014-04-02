@@ -2,6 +2,7 @@ package me.deejayarroba.craftheads.listeners;
 
 import me.deejayarroba.craftheads.menu.*;
 import me.deejayarroba.craftheads.util.MessageManager;
+import org.bukkit.Material;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
@@ -22,18 +23,31 @@ public class InvClickEvent implements Listener {
 		CategoryManager categoryManager = CategoryManager.getInstance();
 
 		Menu menu = menuManager.getMenu(inventory.getTitle());
-		MenuItem menuItem = menu.getMenuItem(clickedItem.getItemMeta().getDisplayName());
+
+		if (clickedItem == null || clickedItem.getType() == Material.AIR) {
+			return;
+		}
+
+		if (menu != null) {
+			event.setCancelled(true);
+			MenuItem menuItem = menu.getMenuItem(clickedItem.getItemMeta().getDisplayName());
+			if (menuItem != null) {
+				event.setCancelled(true);
+				menuItem.executeAction(p);
+				return;
+			}
+		}
 
 		Category category = categoryManager.getCategory(inventory.getTitle());
-		Head head = category.getHead(clickedItem.getItemMeta().getDisplayName());
-
-		if (menu != null)
-			if (menuItem != null)
-				menuItem.executeAction(p);
-
-		if (category != null)
-			if (head != null)
+		if (category != null) {
+			event.setCancelled(true);
+			Head head = category.getHead(clickedItem.getItemMeta().getDisplayName());
+			if (head != null) {
 				head.executeAction(p);
+				return;
+			}
+		}
+
 
 	}
 }

@@ -37,13 +37,12 @@ public class Menu {
 		inventory = Bukkit.createInventory(null, slotCount, name);
 
 		for (MenuItem menuItem : menuItems) {
-			//inventory.setItem(position, menuItem.getItemStack());
-			inventory.addItem(menuItem.getItemStack());
+			inventory.setItem(menuItem.getPosition(), menuItem.getItemStack());
 		}
 	}
 
 	public void add(String name, Material material, short damage, int position, MenuItemAction action) {
-		MenuItem menuItem = new MenuItem(name, material, damage, action);
+		MenuItem menuItem = new MenuItem(name, material, damage, action, position);
 		menuItems.add(menuItem);
 	}
 

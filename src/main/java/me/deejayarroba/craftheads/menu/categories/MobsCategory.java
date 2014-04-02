@@ -30,10 +30,8 @@ public class MobsCategory extends Category {
 		add("Herobrine", "MHF_Herobrine", Material.DIAMOND_SWORD, (short) 0);
 		add("Horse (1)", "Horsi2", Material.MONSTER_EGG, (short) 100);
 		add("Horse (2)", "gavertoso", Material.MONSTER_EGG, (short) 100);
-		add("Beheaded steve (1)", "Tarem2", Material.MONSTER_EGG, (short) 3);
-		add("Beheaded steve (2)", "tubbydontdiet", Material.MONSTER_EGG, (short) 3);
+		add("Beheaded steve", "tubbydontdiet", Material.MONSTER_EGG, (short) 3);
 		add("Decompising head", "tha_cat", Material.SKULL_ITEM, (short) 2);
-		add("Beheaded skeleton", "lesto123", Material.SKULL_ITEM, (short) 1);
 		add("Bloody skull", "theangryman", Material.WOOL, (short) 14);
 		add("Mossy skull", "wallabee", Material.MOSSY_COBBLESTONE, (short) 0);
 		add("Enderman/Wither morph", "hopkinstm", Material.ENDER_PEARL, (short) 0);
@@ -48,7 +46,7 @@ public class MobsCategory extends Category {
 		add("Ghost", "SmallTownGal", Material.SKULL_ITEM, (short) 0);
 		add("Sheep", "MHF_Sheep", Material.WOOL, (short) 0);
 		add("Pink sheep", "Kolish", Material.WOOL, (short) 6);
-		add("Magenta sheep", "WoolDye", Material.WOOL, (short) 2);
+		add("Light gray sheep", "WoolDye", Material.WOOL, (short) 2);
 		add("Yellow sheep", "Sheepshaver406", Material.WOOL, (short) 4);
 		add("Lime sheep", "Alphazazoo", Material.WOOL, (short) 5);
 		add("Cyan sheep", "EvilCyanSheep", Material.WOOL, (short) 9);

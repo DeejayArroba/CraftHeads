@@ -24,17 +24,17 @@ public class AnimalsCategory extends Category {
 		add("Frog", "sjkelly1299", Material.WOOL, (short) 5);
 		add("Blue whale", "tabellowic", Material.WOOL, (short) 11);
 		add("Bat", "TheInfernoShadow", Material.MONSTER_EGG, (short) 65);
-		add("Cat (1)", "Dragibus33", Material.AIR, (short) 0);
-		add("Cat (2)", "EnjoiDung", Material.AIR, (short) 0);
-		add("Dog", "GodTGF", Material.AIR, (short) 0);
-		add("Ape", "swmyprod", Material.AIR, (short) 0);
-		add("Fish", "PirateRy", Material.AIR, (short) 0);
-		add("Turkey", "turkeybot69", Material.AIR, (short) 0);
-		add("Duck", "dododaan", Material.AIR, (short) 0);
-		add("Werewolf", "SomeWerewolf", Material.AIR, (short) 0);
-		add("Polar bear", "mabo516", Material.AIR, (short) 0);
-		add("Monkey", "spiffywaffleman", Material.AIR, (short) 0);
-		add("Bear", "bear1717", Material.AIR, (short) 0);
-		add("Chihuahua", "Taureus", Material.AIR, (short) 0);
+		add("Cat (1)", "Dragibus33", Material.COOKED_FISH, (short) 0);
+		add("Cat (2)", "EnjoiDung", Material.COOKED_FISH, (short) 0);
+		add("Dog", "GodTGF", Material.BONE, (short) 0);
+		add("Ape", "swmyprod", Material.COCOA, (short) 0);
+		add("Fish", "PirateRy", Material.RAW_FISH, (short) 0);
+		add("Turkey", "turkeybot69", Material.RAW_CHICKEN, (short) 0);
+		add("Duck", "dododaan", Material.RAW_CHICKEN, (short) 0);
+		add("Werewolf", "SomeWerewolf", Material.BONE, (short) 0);
+		add("Polar bear", "mabo516", Material.SNOW_BLOCK, (short) 0);
+		add("Monkey", "spiffywaffleman", Material.COCOA, (short) 0);
+		add("Bear", "bear1717", Material.COCOA, (short) 0);
+		add("Chihuahua", "Taureus", Material.BONE, (short) 0);
 	}
 }

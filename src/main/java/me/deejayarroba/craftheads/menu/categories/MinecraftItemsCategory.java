@@ -19,7 +19,6 @@ public class MinecraftItemsCategory extends Category {
 		add("Sideways cake", "Cakeman2014", Material.CAKE_BLOCK, (short) 0);
 		add("Jukebox", "C418", Material.JUKEBOX, (short) 0);
 		add("Noteblock", "PixelJuke", Material.NOTE_BLOCK, (short) 0);
-		add("Eye of ender", "Edna_1", Material.EYE_OF_ENDER, (short) 0);
 		add("Water bucket", "TagStarDude", Material.WATER_BUCKET, (short) 0);
 		add("Lava bucket", "PocketMines", Material.LAVA_BUCKET, (short) 0);
 		add("Milk bucket", "Cxomtdoh", Material.MILK_BUCKET, (short) 0);

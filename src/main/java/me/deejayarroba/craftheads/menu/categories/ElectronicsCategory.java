@@ -36,8 +36,6 @@ public class ElectronicsCategory extends Category {
 		add("Game Cube (1)", "ReflectedNicK", Material.DIODE, (short) 0);
 		add("Game Cube (2)", "Eien15", Material.DIODE, (short) 0);
 		add("Headlight", "Toby_The_Coder", Material.GLOWSTONE, (short) 0);
-		add("Police light", "coltfan98", Material.WOOL, (short) 11);
 		add("Microwave", "RottenCHEEZBURGR", Material.PUMPKIN_PIE, (short) 0);
-		add("Machinery block", "Foxza12", Material.IRON_BLOCK, (short) 0);
 	}
 }
