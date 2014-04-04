@@ -6,7 +6,7 @@ update-check: true
 # This enables the plugin to download a new version if an update is detected.
 # For this to work you have to set "update-check" to true.
 # If you don't want to download updates automatically, set this to false.
-auto-update: true
+auto-update: false
 
 # This enables metrics.
 # If you don't want metrics enabled set this to false.
