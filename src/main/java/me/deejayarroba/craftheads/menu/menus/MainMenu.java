@@ -48,15 +48,8 @@ public class MainMenu extends Menu {
 			@Override
 			public void click(final Player p) {
 				msg.good(p, "Type the username of the player's head in chat!");
-				msg.good(p, "This request will expire in 30 seconds.");
 				chatUtil.setRequestingHead(p, true);
-				Bukkit.getScheduler().scheduleSyncDelayedTask(plugin, new Runnable() {
-					@Override
-					public void run() {
-						msg.info(p, "Head request expired!");
-						chatUtil.setRequestingHead(p, false);
-					}
-				}, 30 * 20);
+				p.closeInventory();
 			}
 		});
 	}

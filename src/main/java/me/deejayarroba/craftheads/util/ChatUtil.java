@@ -2,20 +2,25 @@ package me.deejayarroba.craftheads.util;
 
 import org.bukkit.entity.Player;
 
-import java.util.HashMap;
-import java.util.Map;
+import java.util.ArrayList;
+import java.util.List;
 
 public class ChatUtil {
 
-	private Map<String, Boolean> requestingHead = new HashMap<String, Boolean>();
+	private List<String> requestingHead = new ArrayList<String>();
 	private static ChatUtil instance = new ChatUtil();
 
 	public boolean isRequestingHead(Player p) {
-		return requestingHead.get(p.getName());
+		return requestingHead.contains(p.getName());
 	}
 
 	public void setRequestingHead(Player p, boolean requesting) {
-		requestingHead.put(p.getName(), requesting);
+		if (requesting) {
+			if (!requestingHead.contains(p.getName()))
+				requestingHead.add(p.getName());
+		} else {
+			requestingHead.remove(p.getName());
+		}
 	}
 
 	public static ChatUtil getInstance() {

@@ -11,15 +11,16 @@ public class UpdateUtil {
 	private static UpdateUtil instance = new UpdateUtil();
 
 	public void updateNotice(Player p) {
-		if (plugin.getConfig().getBoolean("update-check"))
-			if (!plugin.getConfig().getBoolean("auto-update"))
-				if (p.hasPermission("craftheads.updater") || p.isOp()) {
-					Updater updater = new Updater(plugin, 70538, plugin.getPluginFile(), Updater.UpdateType.NO_DOWNLOAD, false);
-					Updater.UpdateResult result = updater.getResult();
-					if (result == Updater.UpdateResult.UPDATE_AVAILABLE)
-						msg.info(p, "An update is available for CraftHeads. Get it here: " + updater.getLatestFileLink());
+		if (!Main.devBuild)
+			if (plugin.getConfig().getBoolean("update-check"))
+				if (!plugin.getConfig().getBoolean("auto-update"))
+					if (p.hasPermission("craftheads.updater") || p.isOp()) {
+						Updater updater = new Updater(plugin, 70538, plugin.getPluginFile(), Updater.UpdateType.NO_DOWNLOAD, false);
+						Updater.UpdateResult result = updater.getResult();
+						if (result == Updater.UpdateResult.UPDATE_AVAILABLE)
+							msg.info(p, "An update is available for CraftHeads. Get it here: " + updater.getLatestFileLink());
 
-				}
+					}
 	}
 
 	public static UpdateUtil getInstance() {

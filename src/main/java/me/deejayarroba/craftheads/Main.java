@@ -14,6 +14,8 @@ import java.io.IOException;
 
 public class Main extends JavaPlugin {
 
+	public static boolean devBuild = true;
+
 	@Override
 	public void onEnable() {
 		getConfig().addDefault("auto-update", true);
@@ -29,7 +31,7 @@ public class Main extends JavaPlugin {
 		AbstractCommand craftHeadsCommand = new CraftHeadsCommand("craftheads", "/<command>", "The main CraftHeads command.");
 		craftHeadsCommand.register();
 
-		if(getConfig().getBoolean("metrics")) {
+		if (getConfig().getBoolean("metrics")) {
 			try {
 				Metrics metrics = new Metrics(this);
 				metrics.start();
@@ -38,17 +40,18 @@ public class Main extends JavaPlugin {
 			}
 		}
 
-		if(getConfig().getBoolean("update-check")) {
-			if (getConfig().getBoolean("auto-update")) {
-				Updater updater = new Updater(this, 70538, this.getFile(), Updater.UpdateType.DEFAULT, true);
-			} else {
-				Updater updater = new Updater(this, 70538, this.getFile(), Updater.UpdateType.NO_DOWNLOAD, false);
-				Updater.UpdateResult result = updater.getResult();
-				if (result == Updater.UpdateResult.UPDATE_AVAILABLE) {
-					getLogger().info("An update for CraftHeads is available");
+		if (!devBuild)
+			if (getConfig().getBoolean("update-check")) {
+				if (getConfig().getBoolean("auto-update")) {
+					Updater updater = new Updater(this, 70538, this.getFile(), Updater.UpdateType.DEFAULT, true);
+				} else {
+					Updater updater = new Updater(this, 70538, this.getFile(), Updater.UpdateType.NO_DOWNLOAD, false);
+					Updater.UpdateResult result = updater.getResult();
+					if (result == Updater.UpdateResult.UPDATE_AVAILABLE) {
+						getLogger().info("An update for CraftHeads is available");
+					}
 				}
 			}
-		}
 	}
 
 	public File getPluginFile() {
