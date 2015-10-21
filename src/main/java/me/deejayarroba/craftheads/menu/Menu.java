@@ -1,31 +1,25 @@
 package me.deejayarroba.craftheads.menu;
 
 import org.bukkit.Bukkit;
-import org.bukkit.Material;
 import org.bukkit.inventory.Inventory;
 import org.bukkit.inventory.ItemStack;
-import org.bukkit.inventory.meta.ItemMeta;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class Menu {
+public abstract class Menu {
 
-	private String name;
-	private Inventory inventory;
-	private ItemStack icon;
-	private List<MenuItem> menuItems = new ArrayList<MenuItem>();
+	protected String name;
+	protected Inventory inventory;
+	protected List<MenuItem> menuItems = new ArrayList<MenuItem>();
 
-	public Menu(String name, Material material, short damage) {
-		this.name = name;
-		ItemStack itemStack = new ItemStack(material, 1, damage);
-		ItemMeta itemMeta = itemStack.getItemMeta();
-		itemMeta.setDisplayName(name);
-		itemStack.setItemMeta(itemMeta);
-		this.icon = itemStack;
+	public Menu() {
 
-		setup();
+	}
 
+	// Places the MenuItems in the inventory
+	// Must be called in the constructor
+	protected void placeItems() {
 		int slotCount;
 		int itemCount = getMenuItems().size();
 		int rest = itemCount % 9;
@@ -36,31 +30,23 @@ public class Menu {
 
 		inventory = Bukkit.createInventory(null, slotCount, name);
 
-		for (MenuItem menuItem : menuItems) {
-			inventory.setItem(menuItem.getPosition(), menuItem.getItemStack());
+		for (int i = 0; i < menuItems.size(); i++) {
+			MenuItem menuItem = menuItems.get(i);
+			inventory.setItem(i, menuItem.getItemStack());
 		}
-	}
-
-	public void add(String name, Material material, short damage, int position, MenuItemAction action) {
-		MenuItem menuItem = new MenuItem(name, material, damage, action, position);
-		menuItems.add(menuItem);
 	}
 
 	public List<MenuItem> getMenuItems() {
 		return menuItems;
 	}
 
-	public MenuItem getMenuItem(String menuItemName) {
+	public MenuItem getMenuItem(ItemStack itemStack) {
 		for (MenuItem menuItem : menuItems) {
-			if (menuItem.getName().equals(menuItemName)) {
+			if (menuItem.getItemStack().equals(itemStack)) {
 				return menuItem;
 			}
 		}
 		return null;
-	}
-
-	public void setup() {
-
 	}
 
 	public Inventory getInventory() {

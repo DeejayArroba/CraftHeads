@@ -4,6 +4,6 @@ import org.bukkit.entity.Player;
 
 public interface MenuItemAction {
 
-	public void click(Player p);
+	public void execute(Player p);
 
 }

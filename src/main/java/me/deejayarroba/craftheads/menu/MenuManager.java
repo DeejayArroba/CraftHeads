@@ -1,42 +1,73 @@
 package me.deejayarroba.craftheads.menu;
 
-import me.deejayarroba.craftheads.menu.menus.ExtraHeadsMenu;
-import me.deejayarroba.craftheads.menu.menus.MainMenu;
+import me.deejayarroba.craftheads.Main;
+import me.deejayarroba.craftheads.menu.menutypes.CategoriesMenu;
+import me.deejayarroba.craftheads.menu.menutypes.CategoryMenu;
+import me.deejayarroba.craftheads.menu.menutypes.MainMenu;
+import me.deejayarroba.craftheads.skulls.Skulls;
+import me.deejayarroba.craftheads.util.Items;
+import me.deejayarroba.craftheads.util.MessageManager;
 import org.bukkit.Material;
+import org.bukkit.SkullType;
+import org.bukkit.entity.Player;
+import org.bukkit.inventory.Inventory;
+import org.json.simple.JSONObject;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.function.Consumer;
 
 public class MenuManager {
 
-	private static MenuManager instance = new MenuManager();
+	private static MessageManager msg = MessageManager.getInstance();
 
-	private List<Menu> menus = new ArrayList<Menu>();
+	private static List<Menu> menus = new ArrayList<>();
+	public static MainMenu mainMenu;
+	public static CategoriesMenu categoriesMenu;
+	public static ArrayList<CategoryMenu> categoryMenus = new ArrayList<>();
 
-	public MenuManager() {
-		setup();
-	}
-
-	public static MenuManager getInstance() {
-		return instance;
-	}
-
-	private void add(Menu menu) {
+	// Shortcut to add a menu
+	private static void add(Menu menu) {
 		menus.add(menu);
 	}
 
-	private void setup() {
-		add(new MainMenu("Main menu", Material.WORKBENCH, (short) 0));
-		add(new ExtraHeadsMenu("Extra heads", Material.CAKE, (short) 0));
+	// Initialization: create all the menus here
+	public static void setup() {
+		mainMenu = new MainMenu();
+		add(mainMenu);
+		categoriesMenu = new CategoriesMenu();
+		add(categoriesMenu);
+
+
+		Main.HEAD_CATEGORIES.forEach(new Consumer() {
+			@Override
+			public void accept(Object o) {
+				JSONObject category = (JSONObject) o;
+				CategoryMenu categoryMenu = new CategoryMenu(category);
+				categoryMenus.add(categoryMenu);
+				add(categoryMenu);
+			}
+		});
 	}
 
-	public List<Menu> getMenus() {
+	// Get all the menus
+	public static List<Menu> getMenus() {
 		return menus;
 	}
 
-	public Menu getMenu(String name) {
+	// Get a menu from its name
+	public static Menu getMenu(String name) {
 		for(Menu menu : getMenus()) {
 			if(menu.getName().equals(name))
+				return menu;
+		}
+		return null;
+	}
+
+	// Get a menu from its inventory
+	public static Menu getMenu(Inventory inv) {
+		for(Menu menu : getMenus()) {
+			if(menu.getInventory().equals(inv))
 				return menu;
 		}
 		return null;

@@ -10,6 +10,7 @@ public class UpdateUtil {
 	MessageManager msg = MessageManager.getInstance();
 	private static UpdateUtil instance = new UpdateUtil();
 
+	// Alerts the administrator of a new update for the plugin
 	public void updateNotice(Player p) {
 		if (!Main.devBuild)
 			if (plugin.getConfig().getBoolean("update-check"))

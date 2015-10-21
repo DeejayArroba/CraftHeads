@@ -2,6 +2,7 @@ package me.deejayarroba.craftheads.listeners;
 
 import me.deejayarroba.craftheads.menu.*;
 import me.deejayarroba.craftheads.util.MessageManager;
+import org.bukkit.Bukkit;
 import org.bukkit.Material;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
@@ -19,35 +20,26 @@ public class InvClickEvent implements Listener {
 		Player p = (Player) event.getWhoClicked();
 		Inventory inventory = event.getInventory();
 		ItemStack clickedItem = event.getCurrentItem();
-		MenuManager menuManager = MenuManager.getInstance();
-		CategoryManager categoryManager = CategoryManager.getInstance();
 
-		Menu menu = menuManager.getMenu(inventory.getTitle());
 
-		if (clickedItem == null || clickedItem.getType() == Material.AIR) {
-			return;
-		}
 
-		if (menu != null) {
+		// Check if the inventory is the menu
+		if(MenuManager.getMenu(inventory) != null) {
+			// Cancel the event to prevent the user from placing an item in the menu
 			event.setCancelled(true);
-			MenuItem menuItem = menu.getMenuItem(clickedItem.getItemMeta().getDisplayName());
-			if (menuItem != null) {
-				event.setCancelled(true);
-				menuItem.executeAction(p);
-				return;
-			}
-		}
+			Menu menu = MenuManager.getMenu(inventory);
 
-		Category category = categoryManager.getCategory(inventory.getTitle());
-		if (category != null) {
-			event.setCancelled(true);
-			Head head = category.getHead(clickedItem.getItemMeta().getDisplayName());
-			if (head != null) {
-				head.executeAction(p);
-				return;
-			}
-		}
 
+			if (clickedItem != null && clickedItem.getType() != Material.AIR) {
+				// Check if the menu contains the clicked item
+				if(menu.getInventory().contains(clickedItem)) {
+					MenuItem menuItem = menu.getMenuItem(clickedItem);
+					// Execute the menu item's action
+					menuItem.executeAction(p);
+				}
+			}
+
+		}
 
 	}
 }
