@@ -1,32 +1,11 @@
-# This enables the check for updates.
-# If this is set to true and "auto-update" is set to false, you will get notifications about updates.
-# If don't want to check for updates, set this to false.
+# CraftHeads Configuration File
+# For documentation about the configuration file check the following website:
+# http://dev.bukkit.org/bukkit-plugins/craftheads/pages/default-configuration-file/
 update-check: true
-
-# This enables the plugin to download a new version if an update is detected.
-# For this to work you have to set "update-check" to true.
-# If you don't want to download updates automatically, set this to false.
 auto-update: true
-
-# This enables metrics.
-# If you don't want metrics enabled set this to false.
 metrics: true
-
-# This enables economy support for selling heads
-# This option requires the Vault plugin and an economy plugin
 economy: false
-
-# This is the default price for heads that don't have a price above zero
-# You can set this to zero to make them free by default
-# Only works when economy is enabled
 default-price: 100
-
-# This is the price the player has to pay to buy his own head
-# You can set this to zero to make it by default
-# Only works when economy is enabled
 player-own-head-price: 100
-
-# This is the price the player has to pay to buy other player's heads
-# You can set this to zero to make it by default
-# Only works when economy is enabled
 player-other-head-price: 100
+reset-categories: true

@@ -21,29 +21,26 @@ public class CategoriesMenu extends Menu {
 		menuItems = new ArrayList<>();
 
 		// Loop through all the categories
-		Main.HEAD_CATEGORIES.forEach(new Consumer() {
-			@Override
-			public void accept(Object o) {
-				final JSONObject category = (JSONObject) o;
+		for(Object o : Main.HEAD_CATEGORIES) {
+			final JSONObject category = (JSONObject) o;
 
-				menuItems.add(new MenuItem(
-						Items.editor(Skulls.getCustomSkull((String) category.get("URL")))
-								.setName(ChatColor.GOLD + (String) category.get("Name"))
-								.build(),
-						new MenuItemAction() {
-							@Override
-							public void execute(Player p) {
+			menuItems.add(new MenuItem(
+					Items.editor(Skulls.getCustomSkull((String) category.get("URL")))
+							.setName(ChatColor.GOLD + (String) category.get("Name"))
+							.build(),
+					new MenuItemAction() {
+						@Override
+						public void execute(Player p) {
 
-								for(CategoryMenu categoryMenu : MenuManager.categoryMenus) {
-									if(category.equals(categoryMenu.getCategory())) {
-										p.openInventory(categoryMenu.getInventory());
-									}
+							for(CategoryMenu categoryMenu : MenuManager.categoryMenus) {
+								if(category.equals(categoryMenu.getCategory())) {
+									p.openInventory(categoryMenu.getInventory());
 								}
-
 							}
-						}));
-			}
-		});
+
+						}
+					}));
+		}
 
 		placeItems();
 	}

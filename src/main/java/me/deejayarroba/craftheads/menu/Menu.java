@@ -11,7 +11,7 @@ public abstract class Menu {
 
 	protected String name;
 	protected Inventory inventory;
-	protected List<MenuItem> menuItems = new ArrayList<MenuItem>();
+	protected ArrayList<MenuItem> menuItems = new ArrayList<>();
 
 	public Menu() {
 
