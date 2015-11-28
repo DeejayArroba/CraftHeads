@@ -31,7 +31,7 @@ import java.util.jar.JarFile;
 public class Main extends JavaPlugin {
 
 	// Make this true, otherwise it might download a version of the plugin from bukkit.org when you run it
-	public static boolean devBuild = false;
+	public static boolean devBuild = true;
 
 	public static JSONArray HEAD_CATEGORIES = new JSONArray();
 	public static Economy economy = null;
