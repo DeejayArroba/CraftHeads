@@ -44,7 +44,6 @@ public class Main extends JavaPlugin {
 		if(getConfig().getBoolean("economy"))
 			setupEconomy();
 
-
 		loadCategories();
 
 		defaultHeadPrice = getConfig().getInt("default-price");
