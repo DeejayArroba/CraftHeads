@@ -1,0 +1,117 @@
+{
+    "Name": "Animals",
+    "URL": "http://textures.minecraft.net/texture/e9f2dcbcde8a227cd3d285799a3b2d4bffe3b4db20203c90bea1afcf24176bd",
+    "Price": 0,
+    "Heads": [
+        {
+            "Name": "Monkey",
+            "Price": 0,
+            "URL": "http://textures.minecraft.net/texture/e9f2dcbcde8a227cd3d285799a3b2d4bffe3b4db20203c90bea1afcf24176bd"
+        },
+        {
+            "Name": "Polar Bear",
+            "Price": 0,
+            "URL": "http://textures.minecraft.net/texture/d46d23f04846369fa2a3702c10f759101af7bfe8419966429533cd81a11d2b"
+        },
+        {
+            "Name": "Penguin",
+            "Price": 0,
+            "URL": "http://textures.minecraft.net/texture/d3c57facbb3a4db7fd55b5c0dc7d19c19cb0813c748ccc9710c714727551f5b9"
+        },
+        {
+            "Name": "Walrus",
+            "Price": 0,
+            "URL": "http://textures.minecraft.net/texture/d7baedaf9ad95474eb1be58924445dfc77bbdc252cc1c81644cf7154c441"
+        },
+        {
+            "Name": "Tiger",
+            "Price": 0,
+            "URL": "http://textures.minecraft.net/texture/b6b96bbc8ad9bae0e254d35fdfb1db48e822ed97cf5f739d3e9545dd6ce"
+        },
+        {
+            "Name": "Panda",
+            "Price": 0,
+            "URL": "http://textures.minecraft.net/texture/d188c980aacfa94cf33088512b1b9517ba826b154d4cafc262aff6977be8a"
+        },
+        {
+            "Name": "Cat",
+            "Price": 0,
+            "URL": "http://textures.minecraft.net/texture/4469bcc3a6d4e44b704349b3f0a416e1e1f9eeb3991e945a99184e09a66b"
+        },
+        {
+            "Name": "Angry Wolf",
+            "Price": 0,
+            "URL": "http://textures.minecraft.net/texture/e95cbb4f75ea87617f2f713c6d49dac3209ba1bd4b9369654b1459ea15317"
+        },
+        {
+            "Name": "Rabbit",
+            "Price": 0,
+            "URL": "http://textures.minecraft.net/texture/dc7a317ec5c1ed7788f89e7f1a6af3d2eeb92d1e9879c05343c57f9d863de130"
+        },
+        {
+            "Name": "Koala",
+            "Price": 0,
+            "URL": "http://textures.minecraft.net/texture/ca35eb10b94e888427fb23c783082658ceb81f3cf5d0aad25d7d41a194b26"
+        },
+        {
+            "Name": "Chinese Dragon",
+            "Price": 0,
+            "URL": "http://textures.minecraft.net/texture/91641d038eb3862b1e022c5e0588d96366da1c944ee5e6ee13e0f5dd7b427b"
+        },
+        {
+            "Name": "Clownfish",
+            "Price": 0,
+            "URL": "http://textures.minecraft.net/texture/36d149e4d499929672e2768949e6477959c21e65254613b327b538df1e4df"
+        },
+        {
+            "Name": "Bird",
+            "Price": 0,
+            "URL": "http://textures.minecraft.net/texture/b9627370fedbd0bae7bae6d6f8583555763789c1bd93fa639cfa3dfd48e34850"
+        },
+        {
+            "Name": "Bee",
+            "Price": 0,
+            "URL": "http://textures.minecraft.net/texture/947322f831e3c168cfbd3e28fe925144b261e79eb39c771349fac55a8126473"
+        },
+        {
+            "Name": "Hermit Crab",
+            "Price": 0,
+            "URL": "http://textures.minecraft.net/texture/185e6834a4bf26a6526f7cac4f6eaa9f7fa77db8c14353a81582b5f699"
+        },
+        {
+            "Name": "Regular Fish",
+            "Price": 0,
+            "URL": "http://textures.minecraft.net/texture/6f99b580d45a784e7a964e7d3b1f97cece74911173bd21c1d7c56acdc385ed5"
+        },
+        {
+            "Name": "Salmon Fish",
+            "Price": 0,
+            "URL": "http://textures.minecraft.net/texture/adfc57d09059e4799fa92c15e28512bcfaa1315577fe3a27aed389e4f752289a"
+        },
+        {
+            "Name": "Tortoise",
+            "Price": 0,
+            "URL": "http://textures.minecraft.net/texture/12e548408ab75d7df8e6d5d2446d90b6ec62aa4f7feb7930d1ee71eefddf6189"
+        },
+        {
+            "Name": "Seagull",
+            "Price": 0,
+            "URL": "http://textures.minecraft.net/texture/c3bde43111f69a7fda6ec6faf2263c827961f390d7c6163ed1231035d1b0b9"
+        },
+        {
+            "Name": "Ferret",
+            "Price": 0,
+            "URL": "http://textures.minecraft.net/texture/236edf7de9adca72308a94d1c38c358acc82918fe8fced25d474820f4cb784"
+        },
+        {
+            "Name": "Elephant",
+            "Price": 0,
+            "URL": "http://textures.minecraft.net/texture/7071a76f669db5ed6d32b48bb2dba55d5317d7f45225cb3267ec435cfa514"
+        },
+        {
+            "Name": "Furby",
+            "Price": 0,
+            "URL": "http://textures.minecraft.net/texture/7bff527562889e16a544f2f996fba3d9541d0aacf81462bffc9fb5cad8aedd5"
+        }
+    ]
+}

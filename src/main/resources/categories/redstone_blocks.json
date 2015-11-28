@@ -1,0 +1,82 @@
+{
+    "Name": "Redstone blocks",
+    "Price": 0,
+    "URL": "http://textures.minecraft.net/texture/c2b0a2709ad27c5783ba7acbdae8787d17673f0888f1b6d4e24ee13298d4",
+    "Heads": [
+        {
+            "Name": "Redstone Lamp (On)",
+            "Price": 0,
+            "URL": "http://textures.minecraft.net/texture/1aff93ebecc1f8fbd13ba7839ec7bdcdecab7c07fd8ba78ee78ad0bd3accbe"
+        },
+        {
+            "Name": "Redstone Lamp (Off)",
+            "Price": 0,
+            "URL": "http://textures.minecraft.net/texture/bd58d459165d5978753eab5f44bd609f3db84ee3bb016932052389d38b895"
+        },
+        {
+            "Name": "Piston",
+            "Price": 0,
+            "URL": "http://textures.minecraft.net/texture/dac9672ff65c2d27ac61b94d174cf1cc70729ec7f5663397e2dd4726a7bcd5"
+        },
+        {
+            "Name": "Sticky Piston",
+            "Price": 0,
+            "URL": "http://textures.minecraft.net/texture/7ca4d218df9d32cd47d9c1d294877122be5919b418a6cc3d089162b133f2db"
+        },
+        {
+            "Name": "Slime Piston",
+            "Price": 0,
+            "URL": "http://textures.minecraft.net/texture/b711315e3701d66c53154aac995d64ff7f80be8e11d2712d9298dbabd71d6"
+        },
+        {
+            "Name": "Half Piston",
+            "Price": 0,
+            "URL": "http://textures.minecraft.net/texture/aa868ce917c09af8e4c350a5807041f6509bf2b89aca45e591fbbd7d4b117d"
+        },
+        {
+            "Name": "Dropper",
+            "Price": 0,
+            "URL": "http://textures.minecraft.net/texture/6326f0e739353d2d7c8e9ab4e91e1fbec607cad0fe10296afd21d633b9ecee"
+        },
+        {
+            "Name": "Dropper",
+            "Price": 0,
+            "URL": "http://textures.minecraft.net/texture/25e9152efd892f60d7e0d7e53369e04779ed3111e2fb2752b6f4c26df540aedc"
+        },
+        {
+            "Name": "Redstone Torch",
+            "Price": 0,
+            "URL": "http://textures.minecraft.net/texture/c2b0a2709ad27c5783ba7acbdae8787d17673f0888f1b6d4e24ee13298d4"
+        },
+        {
+            "Name": "Redstone Torch",
+            "Price": 0,
+            "URL": "http://textures.minecraft.net/texture/5c9e37f599c55698d3873c8714d9f3a408751c01271a789e2ce3e7e9a2dc4"
+        },
+        {
+            "Name": "Redstone Block",
+            "Price": 0,
+            "URL": "http://textures.minecraft.net/texture/d08ee6edfa98db5eae9b9c9936e94489b2d4bbbd3d2b4b6b4885a32240613c"
+        },
+        {
+            "Name": "TNT",
+            "Price": 0,
+            "URL": "http://textures.minecraft.net/texture/728a1815689d7194cf7db061b59f63106264b51387976a7fb74ab79b5641"
+        },
+        {
+            "Name": "TNT",
+            "Price": 0,
+            "URL": "http://textures.minecraft.net/texture/eb994b41f07f87b328186acfcbdabc699d5b1847fabb2e49d5abc27865143a4e"
+        },
+        {
+            "Name": "Note Block",
+            "Price": 0,
+            "URL": "http://textures.minecraft.net/texture/4ceeb77d4d25724a9caf2c7cdf2d88399b1417c6b9ff5213659b653be4376e3"
+        },
+        {
+            "Name": "Dispenser",
+            "Price": 0,
+            "URL": "http://textures.minecraft.net/texture/e82e6aa950117384eb4bf55217283a78f57b8c85c089aad03bac5caa83c3020"
+        }
+    ]
+}

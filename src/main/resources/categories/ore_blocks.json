@@ -1,0 +1,92 @@
+{
+    "Name": "Ore blocks",
+    "Price": 0,
+    "URL": "http://textures.minecraft.net/texture/ef7ece624667b94526999dcfaeb7b360c6836be9a773aca9d2eec0d78e9ad5",
+    "Heads": [
+        {
+            "Name": "Quartz Ore",
+            "Price": 0,
+            "URL": "http://textures.minecraft.net/texture/26de58d583c103c1cd34824380c8a477e898fde2eb9a74e71f1a985053b96"
+        },
+        {
+            "Name": "Quartz Block",
+            "Price": 0,
+            "URL": "http://textures.minecraft.net/texture/e5e2b2ed298b53cc84783cd785ec57da49ceaabdcff31b25fe5256b3429b412"
+        },
+        {
+            "Name": "Pillar Quartz Block",
+            "Price": 0,
+            "URL": "http://textures.minecraft.net/texture/61fab0225e20e8458e8b75399713388d929856b551b0149081dbb0121e2a1664"
+        },
+        {
+            "Name": "Chiseled Quartz Block",
+            "Price": 0,
+            "URL": "http://textures.minecraft.net/texture/852cf1aef4b6adbc38f196dfba536db5a0b068f1ab91769ad8c6d2f74d3a5d4e"
+        },
+        {
+            "Name": "Emerald Block",
+            "Price": 0,
+            "URL": "http://textures.minecraft.net/texture/af121f7c1ab1567ff21983ff7a9e55c40c0b865f050d37e5d35defbaa"
+        },
+        {
+            "Name": "Diamond Block",
+            "Price": 0,
+            "URL": "http://textures.minecraft.net/texture/ef7ece624667b94526999dcfaeb7b360c6836be9a773aca9d2eec0d78e9ad5"
+        },
+        {
+            "Name": "Gold Block",
+            "Price": 0,
+            "URL": "http://textures.minecraft.net/texture/c1a1c1bb36c426c53a7fbfec3cd1f0f2189279c6b98eb881963f32f619159"
+        },
+        {
+            "Name": "Iron Block",
+            "Price": 0,
+            "URL": "http://textures.minecraft.net/texture/bba8459145d83ffc44ad58c3260e74ca5a0f634c7eeb59a1ad3234849c933c"
+        },
+        {
+            "Name": "Emerald Ore",
+            "Price": 0,
+            "URL": "http://textures.minecraft.net/texture/4fc495d1e6eb54a386068c6cb121c5875e031b7f61d7236d5f24b77db7da7f"
+        },
+        {
+            "Name": "Redstone Ore",
+            "Price": 0,
+            "URL": "http://textures.minecraft.net/texture/e8deee5866ab199eda1bdd7707bdb9edd693444f1e3bd336bd2c767151cf2"
+        },
+        {
+            "Name": "Diamond Ore",
+            "Price": 0,
+            "URL": "http://textures.minecraft.net/texture/31cbd5383bac3cb78bc62efc8c44b36a6cf86bff9f4dcc2ce5ccf666d3a971"
+        },
+        {
+            "Name": "Iron Ore",
+            "Price": 0,
+            "URL": "http://textures.minecraft.net/texture/db97bdf92b61926e39f5cddf12f8f7132929dee541771e0b592c8b82c9ad52d"
+        },
+        {
+            "Name": "Gold Ore",
+            "Price": 0,
+            "URL": "http://textures.minecraft.net/texture/e4df892293a9236f73f48f9efe979fe07dbd91f7b5d239e4acfd394f6eca"
+        },
+        {
+            "Name": "Lapis Lazuli Block",
+            "Price": 0,
+            "URL": "http://textures.minecraft.net/texture/2d848dc6f694cbf35441722b1a27a195da56e4960231824fd7ec5b1315cc2a"
+        },
+        {
+            "Name": "Lapis Lazuli Ore",
+            "Price": 0,
+            "URL": "http://textures.minecraft.net/texture/2aa0d0fea1afaee334cab4d29d869652f5563c635253c0cbed797ed3cf57de0"
+        },
+        {
+            "Name": "Coal Ore",
+            "Price": 0,
+            "URL": "http://textures.minecraft.net/texture/7788f5ddaf52c5842287b9427a74dac8f0919eb2fdb1b51365ab25eb392c47"
+        },
+        {
+            "Name": "Coal Block",
+            "Price": 0,
+            "URL": "http://textures.minecraft.net/texture/f6c5ecac942c77b95ab4620df5b85e38064c974f9c5c576b843622806a4557"
+        }
+    ]
+}

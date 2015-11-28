@@ -1,5 +1,6 @@
 package me.deejayarroba.craftheads.commands;
 
+import me.deejayarroba.craftheads.Main;
 import me.deejayarroba.craftheads.menu.MenuManager;
 import me.deejayarroba.craftheads.skulls.Skulls;
 import me.deejayarroba.craftheads.util.AbstractCommand;
@@ -32,21 +33,40 @@ public class CraftHeadsCommand extends AbstractCommand {
 				}
 
 				if (args.length > 0) {
+
 					// Here the command would be: /craftheads <playername>
+
+					// TODO: implement buying other people's heads
+
+					float otherHeadPrice = Main.instance.getConfig().getInt("player-other-head-price");
+
+					if(Main.economy != null) {
+						double balance = Main.economy.getBalance(p);
+						if(balance < otherHeadPrice && otherHeadPrice > 0) {
+							msg.bad(p, "You can't your afford this player's head!");
+							return true;
+						}
+					}
 
 					// Check if the inventory is full
 					if(p.getInventory().firstEmpty() == -1) {
 						msg.bad(p, "Your inventory is full!");
+						return true;
 					} else {
 						String playerName = args[0];
 						ItemStack head = Items.editor(Skulls.getPlayerSkull(playerName))
 								.setName(ChatColor.GOLD + "Head: " + ChatColor.AQUA + args[0])
 								.build();
+
+						if(Main.economy != null && otherHeadPrice > 0) {
+							Main.economy.withdrawPlayer(p, otherHeadPrice);
+							msg.good(p, "You bought " + ChatColor.AQUA + playerName + ChatColor.GREEN + "'s head for " + ChatColor.AQUA + otherHeadPrice);
+						}
+
 						p.getInventory().addItem(head);
 						msg.good(p, "You now have " + args[0] + "'s head!");
+						return true;
 					}
-
-					return true;
 				} else {
 					// Open the menu
 

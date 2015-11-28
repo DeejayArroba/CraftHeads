@@ -1,0 +1,82 @@
+{
+    "Name": "Emotes",
+    "Price": 0,
+    "URL": "http://textures.minecraft.net/texture/52e98165deef4ed621953921c1ef817dc638af71c1934a4287b69d7a31f6b8",
+    "Heads": [
+        {
+            "Name": "Scared",
+            "Price": 0,
+            "URL": "http://textures.minecraft.net/texture/636e26c44659e8148ed58aa79e4d60db595f426442116f81b5415c2446ed8"
+        },
+        {
+            "Name": "Angel",
+            "Price": 0,
+            "URL": "http://textures.minecraft.net/texture/3e1debc73231f8ed4b69d5c3ac1b1f18f3656a8988e23f2e1bdbc4e85f6d46a"
+        },
+        {
+            "Name": "Embarrased",
+            "Price": 0,
+            "URL": "http://textures.minecraft.net/texture/f720df911c052377065408db78a25c678f791eb944c063935ae86dbe51c71b"
+        },
+        {
+            "Name": "Kissy",
+            "Price": 0,
+            "URL": "http://textures.minecraft.net/texture/545bd18a2aaf469fad72e52cde6cfb02bfbaa5bfed2a8151277f779ebcdcec1"
+        },
+        {
+            "Name": "Sad",
+            "Price": 0,
+            "URL": "http://textures.minecraft.net/texture/14968ac5af3146826fa2b0d4dd114fda197f8b28f4750553f3f88836a21fac9"
+        },
+        {
+            "Name": "Cool",
+            "Price": 0,
+            "URL": "http://textures.minecraft.net/texture/868f4cef949f32e33ec5ae845f9c56983cbe13375a4dec46e5bbfb7dcb6"
+        },
+        {
+            "Name": "Suprised",
+            "Price": 0,
+            "URL": "http://textures.minecraft.net/texture/bc2b9b9ae622bd68adff7180f8206ec4494abbfa130e94a584ec692e8984ab2"
+        },
+        {
+            "Name": "Dead",
+            "Price": 0,
+            "URL": "http://textures.minecraft.net/texture/b371e4e1cf6a1a36fdae27137fd9b8748e6169299925f9af2be301e54298c73"
+        },
+        {
+            "Name": "Forever Crying",
+            "Price": 0,
+            "URL": "http://textures.minecraft.net/texture/1f1b875de49c587e3b4023ce24d472ff27583a1f054f37e73a1154b5b5498"
+        },
+        {
+            "Name": "Big Grin",
+            "Price": 0,
+            "URL": "http://textures.minecraft.net/texture/5059d59eb4e59c31eecf9ece2f9cf3934e45c0ec476fc86bfaef8ea913ea710"
+        },
+        {
+            "Name": "Wink",
+            "Price": 0,
+            "URL": "http://textures.minecraft.net/texture/f4ea2d6f939fefeff5d122e63dd26fa8a427df90b2928bc1fa89a8252a7e"
+        },
+        {
+            "Name": "Derp",
+            "Price": 0,
+            "URL": "http://textures.minecraft.net/texture/3baabe724eae59c5d13f442c7dc5d2b1c6b70c2f83364a488ce5973ae80b4c3"
+        },
+        {
+            "Name": "Mustache",
+            "Price": 0,
+            "URL": "http://textures.minecraft.net/texture/3636f2724aa6aa4de7ac46c19f3c845fb14847a518c8f7e03d792c82effb1"
+        },
+        {
+            "Name": "Big Smile",
+            "Price": 0,
+            "URL": "http://textures.minecraft.net/texture/7ffaccf17879b17891fc5ef66472cc066a85bfa31b6d786c32afee4796068d"
+        },
+        {
+            "Name": "Smile",
+            "Price": 0,
+            "URL": "http://textures.minecraft.net/texture/52e98165deef4ed621953921c1ef817dc638af71c1934a4287b69d7a31f6b8"
+        }
+    ]
+}

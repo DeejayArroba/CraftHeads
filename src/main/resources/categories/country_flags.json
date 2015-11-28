@@ -1,0 +1,87 @@
+{
+    "Name": "Country Flags",
+    "Price": 0,
+    "URL": "http://textures.minecraft.net/texture/7d15d566202ac0e76cd897759df5d01c11f991bd46c5c9a04357ea89ee75",
+    "Heads": [
+        {
+            "Name": "Netherlands",
+            "Price": 0,
+            "URL": "http://textures.minecraft.net/texture/c23cf210edea396f2f5dfbced69848434f93404eefeabf54b23c073b090adf"
+        },
+        {
+            "Name": "Norway",
+            "Price": 0,
+            "URL": "http://textures.minecraft.net/texture/e0596e165ec3f389b59cfdda93dd6e363e97d9c6456e7c2e123973fa6c5fda"
+        },
+        {
+            "Name": "Sweden",
+            "Price": 0,
+            "URL": "http://textures.minecraft.net/texture/e910904bff9c86f6ed47688e9429c26e8d9c5d5743bd3ebb8e6f5040be192998"
+        },
+        {
+            "Name": "Egypt",
+            "Price": 0,
+            "URL": "http://textures.minecraft.net/texture/826e742b32f0f8db59c07b1bcdde6f8a93f85c929e598c7e9273b9211f2ce78"
+        },
+        {
+            "Name": "Chile",
+            "Price": 0,
+            "URL": "http://textures.minecraft.net/texture/ed1dddc665614c9f6487ba9c666da7579561589a494ef744aaf8f4f88a16"
+        },
+        {
+            "Name": "Monaco",
+            "Price": 0,
+            "URL": "http://textures.minecraft.net/texture/5db2678ccaba7934412cb97ee16d416463a392574c5906352f18dea42895ee"
+        },
+        {
+            "Name": "Canada",
+            "Price": 0,
+            "URL": "http://textures.minecraft.net/texture/f241a697f6dfb1c57cda327baa6732a7828c398be4ebfdbd166c232bcae2b"
+        },
+        {
+            "Name": "United States of America",
+            "Price": 0,
+            "URL": "http://textures.minecraft.net/texture/7d15d566202ac0e76cd897759df5d01c11f991bd46c5c9a04357ea89ee75"
+        },
+        {
+            "Name": "Belgium",
+            "Price": 0,
+            "URL": "http://textures.minecraft.net/texture/5c78aae42ef9ee9faa67b64bb974cea275ce702655d35f841b6017416ee1c393"
+        },
+        {
+            "Name": "Italy",
+            "Price": 0,
+            "URL": "http://textures.minecraft.net/texture/a56c5cc17319a6c9ec847252e4d274552d97da95e1085072dba49d117cf3"
+        },
+        {
+            "Name": "England",
+            "Price": 0,
+            "URL": "http://textures.minecraft.net/texture/bee5c850afbb7d8843265a146211ac9c615f733dcc5a8e2190e5c247dea32"
+        },
+        {
+            "Name": "Romania",
+            "Price": 0,
+            "URL": "http://textures.minecraft.net/texture/84d380aa9d66a2a966eb1cfc17608f28fbfe3a75f6a18a8be544682586c41c4"
+        },
+        {
+            "Name": "Germany",
+            "Price": 0,
+            "URL": "http://textures.minecraft.net/texture/5e7899b4806858697e283f084d9173fe487886453774626b24bd8cfecc77b3f"
+        },
+        {
+            "Name": "Singapore",
+            "Price": 0,
+            "URL": "http://textures.minecraft.net/texture/8b5ed11f797f3fc61eaf8dafb6bf3234d31b96ab7596bd2df722d2ef3473c27"
+        },
+        {
+            "Name": "North Korea",
+            "Price": 0,
+            "URL": "http://textures.minecraft.net/texture/1969d12662faebfaca6f4b0442fcb251fd60b61a9fcdceea2bdc21e025eb21"
+        },
+        {
+            "Name": "France",
+            "Price": 0,
+            "URL": "http://textures.minecraft.net/texture/ba25287d1140fb1741d4b6f7e65672f9e64fffe80ea7371c7f3ec5a6f04039"
+        }
+    ]
+}

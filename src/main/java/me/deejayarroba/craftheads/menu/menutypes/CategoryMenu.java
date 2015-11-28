@@ -1,5 +1,6 @@
 package me.deejayarroba.craftheads.menu.menutypes;
 
+import me.deejayarroba.craftheads.Main;
 import me.deejayarroba.craftheads.menu.Menu;
 import me.deejayarroba.craftheads.menu.MenuItem;
 import me.deejayarroba.craftheads.menu.MenuItemAction;
@@ -32,27 +33,50 @@ public class CategoryMenu extends Menu {
 			@Override
 			public void accept(Object o) {
 				final JSONObject head = (JSONObject) o;
-				final ItemStack itemStack = Items.editor(Skulls.getCustomSkull((String) head.get("URL")))
-						.setName(ChatColor.AQUA + (String) head.get("Name"))
-						.build();
+				final float price = (long) head.get("Price") > 0 ? (long) head.get("Price"): Main.defaultHeadPrice;
 
-				menuItems.add(new MenuItem(itemStack,
-						new MenuItemAction() {
-							@Override
-							public void execute(Player p) {
-								ItemStack headItem = Items.editor(Skulls.getCustomSkull((String) head.get("URL")))
-										.setName(ChatColor.GOLD + "Head: " + ChatColor.AQUA + head.get("Name"))
-										.build();
+				Items.ItemStackBuilder itemStackBuilder = Items.editor(Skulls.getCustomSkull((String) head.get("URL")))
+						.setName(ChatColor.AQUA + "" + ChatColor.BOLD + head.get("Name"));
 
-								// If the inventory is full
-								if(p.getInventory().firstEmpty() == -1) {
-									msg.bad(p, "Your inventory is full!");
-								} else {
-									p.getInventory().addItem(headItem);
-									msg.good(p, "You now have: " + itemStack.getItemMeta().getDisplayName());
-								}
+				if(Main.economy != null) {
+					if(price > 0) {
+						itemStackBuilder.addLore(ChatColor.AQUA + "Price: " + ChatColor.GREEN + price);
+					} else {
+						itemStackBuilder.addLore(ChatColor.AQUA + "Price: " + ChatColor.GREEN + "FREE");
+					}
+				}
+
+				final ItemStack itemStack = itemStackBuilder.build();
+
+				menuItems.add(new MenuItem(itemStack, new MenuItemAction() {
+					@Override
+					public void execute(Player p) {
+						ItemStack headItem = Items.editor(Skulls.getCustomSkull((String) head.get("URL")))
+								.setName(ChatColor.GOLD + "Head: " + ChatColor.AQUA + head.get("Name"))
+								.build();
+
+						if(Main.economy != null) {
+							double balance = Main.economy.getBalance(p);
+							if(balance < price) {
+								// Player can't afford the head
+								msg.bad(p, "You can't afford that head!");
+								return;
 							}
 						}
+						// If the inventory is full
+						if(p.getInventory().firstEmpty() == -1) {
+							msg.bad(p, "Your inventory is full!");
+						} else {
+							if(Main.economy != null && price > 0) {
+								// Player can afford the head
+								Main.economy.withdrawPlayer(p, price);
+								msg.good(p, "You bought a head for " + ChatColor.AQUA + price);
+							}
+							p.getInventory().addItem(headItem);
+							msg.good(p, "You now have: " + itemStack.getItemMeta().getDisplayName());
+						}
+					}
+				}
 				));
 			}
 		});
