@@ -12,7 +12,6 @@ import org.bukkit.entity.Player;
 import org.json.simple.JSONObject;
 
 import java.util.ArrayList;
-import java.util.function.Consumer;
 
 public class CategoriesMenu extends Menu {
 

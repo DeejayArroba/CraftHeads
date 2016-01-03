@@ -4,18 +4,12 @@ import me.deejayarroba.craftheads.Main;
 import me.deejayarroba.craftheads.menu.menutypes.CategoriesMenu;
 import me.deejayarroba.craftheads.menu.menutypes.CategoryMenu;
 import me.deejayarroba.craftheads.menu.menutypes.MainMenu;
-import me.deejayarroba.craftheads.skulls.Skulls;
-import me.deejayarroba.craftheads.util.Items;
 import me.deejayarroba.craftheads.util.MessageManager;
-import org.bukkit.Material;
-import org.bukkit.SkullType;
-import org.bukkit.entity.Player;
 import org.bukkit.inventory.Inventory;
 import org.json.simple.JSONObject;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.function.Consumer;
 
 public class MenuManager {
 
@@ -38,16 +32,12 @@ public class MenuManager {
 		categoriesMenu = new CategoriesMenu();
 		add(categoriesMenu);
 
-
-		Main.HEAD_CATEGORIES.forEach(new Consumer() {
-			@Override
-			public void accept(Object o) {
-				JSONObject category = (JSONObject) o;
-				CategoryMenu categoryMenu = new CategoryMenu(category);
-				categoryMenus.add(categoryMenu);
-				add(categoryMenu);
-			}
-		});
+		for (int i = 0; i < Main.HEAD_CATEGORIES.size(); i++) {
+			JSONObject category = (JSONObject) Main.HEAD_CATEGORIES.get(i);
+			CategoryMenu categoryMenu = new CategoryMenu(category);
+			categoryMenus.add(categoryMenu);
+			add(categoryMenu);
+		}
 	}
 
 	// Get all the menus

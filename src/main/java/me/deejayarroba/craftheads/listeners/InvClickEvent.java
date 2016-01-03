@@ -2,7 +2,6 @@ package me.deejayarroba.craftheads.listeners;
 
 import me.deejayarroba.craftheads.menu.*;
 import me.deejayarroba.craftheads.util.MessageManager;
-import org.bukkit.Bukkit;
 import org.bukkit.Material;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
